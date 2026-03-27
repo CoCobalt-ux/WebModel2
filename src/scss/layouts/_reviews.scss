@@ -1,0 +1,88 @@
+/*----------------------------------reviews--------------------------------*/
+.reviews {
+    padding: 120px 0px;
+    overflow: hidden;
+    @include mobile {
+        padding: 60px 0px 30px;
+    }
+	&__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 60px;
+        @include mobile {
+            margin-bottom: 30px;
+        }
+        @include mobile-650 {
+            margin-bottom: 20px;
+        }
+	}
+	&__leaf {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+		&_text {
+            font-size: 16px;
+            line-height: 130%;
+            background: linear-gradient(63deg, #b38d2a 0%, #f7ef8a 31.25%, #d0aa45 62.5%, #e8c662 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include mobile-650 {
+                font-size: 7px;
+            }
+		}
+        svg {
+            transform: rotate(10deg);
+            @include mobile-650 {
+                width: 20px;
+            }
+        }
+	}
+    &--mod {
+        padding-top: 200px;
+        @include tablet {
+            padding-top: 160px;
+        }
+        @include mobile {
+            padding-top: 120px;
+        }
+        @include mobile-650 {
+            padding-top: 75px;
+        }
+        .subtitle {
+            margin-bottom: 60px;
+            text-align: center;
+            @include mobile {
+                margin-bottom: 45px;
+            }
+            @include mobile-650 {
+                margin-bottom: 30px;
+            }
+        }
+        .reviews__body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            @include tablet {
+                gap: 20px;
+            }
+            @include mobile {
+                gap: 15px;
+            }
+            @include mobile-650 {
+                grid-template-columns: 1fr;
+            }
+        }
+        .feedback {
+            max-width: 100%;
+            @include mobile {
+                border-radius: 22px;
+            }
+        }
+    }
+}
+
+/*----------------------------------reviews--------------------------------*/

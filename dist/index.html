@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="webmodel">
+  <meta name="keywords" content="webmodel">
+  <meta property="og:title" content="webmodel">
+  <meta property="og:url" content="ссылка на сайт">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:description" content="webmodel">
+  <meta property="og:image" content="путь к картинке 1200X630px/image.webp">
+  <title>WebModel</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+
+<body id="body">
+  <div class="wrapper">
+    <header class="header lock-padding">
+      <div class="header__content _container">
+        <div class="header__body">
+          <a class="header__logo" href="index.html" aria-label="логотип">
+            <img src="images/icons/logo.svg" alt="logo" width="142" height="43">
+          </a>
+          <nav class="menu" id="menu" aria-label="Основное меню">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="about.html">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="advantages.html">Преимущества</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="reviews.html">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="blog.html">Статьи</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="social-networks">
+              <a class="social-networks__telegram" href="http://t.me/camwork" aria-label="Наш Telegram канал">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.84765 12.6508L7.51682 17.3042C7.99015 17.3042 8.19515 17.1008 8.44098 16.8567L10.6602 14.7358L15.2585 18.1033C16.1018 18.5733 16.696 18.3258 16.9235 17.3275L19.9418 3.18416L19.9427 3.18333C20.2102 1.93666 19.4918 1.44916 18.6702 1.75499L0.928482 8.54749C-0.282352 9.01749 -0.264019 9.69249 0.722648 9.99833L5.25848 11.4092L15.7943 4.81666C16.2901 4.48833 16.741 4.66999 16.3701 4.99833L7.84765 12.6508Z" fill="white" />
+                </svg>
+              </a>
+              <a class="social-networks__youtube" href="https://www.youtube.com/c/camworkclub" aria-label="Наш youtube канал">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3001_3727)">
+                    <path d="M19.5577 4.9408L19.5827 5.10414C19.4687 4.6885 19.2507 4.30878 18.9491 4.00084C18.6476 3.69289 18.2726 3.46688 17.8594 3.34414L17.8419 3.33997C16.2827 2.91664 10.0086 2.91664 10.0086 2.91664C10.0086 2.91664 3.75025 2.9083 2.17525 3.33997C1.76139 3.45974 1.38486 3.68295 1.08116 3.98854C0.777465 4.29414 0.556606 4.67205 0.439412 5.08664L0.435245 5.10414C-0.147255 8.14664 -0.151422 11.8025 0.461079 15.06L0.435245 14.895C0.54926 15.3106 0.767328 15.6903 1.06886 15.9983C1.37039 16.3062 1.74543 16.5322 2.15858 16.655L2.17608 16.6591C3.73358 17.0833 10.0094 17.0833 10.0094 17.0833C10.0094 17.0833 16.2669 17.0833 17.8427 16.6591C18.2568 16.5396 18.6335 16.3164 18.9374 16.0108C19.2413 15.7052 19.4622 15.3272 19.5794 14.9125L19.5836 14.895C19.8486 13.48 20.0002 11.8516 20.0002 10.1883L19.9994 10.0041L20.0002 9.81247C20.0002 8.1483 19.8486 6.51997 19.5577 4.9408ZM8.00691 13.0425V6.96497L13.2286 10.0083L8.00691 13.0425Z" fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath>
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a class="social-networks__ok"  href="https://ok.ru/camwork" aria-label="Наша группа в однокласниках">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3001_3738)">
+                    <path d="M3.93415 10.7341C3.42331 11.7383 4.00331 12.2183 5.32665 13.0383C6.45165 13.7333 8.00581 13.9875 9.00415 14.0891L5.06998 17.8733C3.92498 18.9708 5.76831 20.7316 6.91248 19.6575L10.01 16.67C11.1958 17.8108 12.3325 18.9041 13.1075 19.6616C14.2525 20.74 16.095 18.9941 14.9625 17.8775C14.8775 17.7966 10.765 13.8516 11.0158 14.0933C12.0266 13.9916 13.5575 13.7225 14.6691 13.0425L14.6683 13.0416C15.9916 12.2175 16.5716 11.7383 16.0683 10.7341C15.7641 10.1641 14.9441 9.68747 13.8525 10.5116C13.8525 10.5116 12.3783 11.6408 10.0008 11.6408C7.62248 11.6408 6.14915 10.5116 6.14915 10.5116C5.05831 9.6833 4.23498 10.1641 3.93415 10.7341Z" fill="white" />
+                    <path d="M10.0002 10.1183C12.8985 10.1183 15.2652 7.85333 15.2652 5.065C15.2652 2.265 12.8985 0 10.0002 0C7.10104 0 4.73438 2.265 4.73438 5.065C4.73438 7.85333 7.10104 10.1183 10.0002 10.1183ZM10.0002 2.56583C11.4244 2.56583 12.586 3.68333 12.586 5.065C12.586 6.435 11.4244 7.5525 10.0002 7.5525C8.57604 7.5525 7.41438 6.435 7.41438 5.065C7.41354 3.6825 8.57521 2.56583 10.0002 2.56583Z" fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath>
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a class="social-networks__wiki" href="https://wiki.camwork.club" aria-label="Наша группа на wiki">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9945 3.56249L15.9998 3.55107C15.999 3.6961 15.9986 3.86989 15.9963 3.98371C16.3357 3.99166 17.2043 4.15138 17.4766 4.86632L13.6502 13.6981C13.4627 13.2598 11.6832 9.30691 11.4801 8.7986L13.3305 4.96015C13.7126 4.37616 14.4432 3.99962 15.1496 3.97229L15.1476 3.57086L11.3044 3.56739C11.2953 3.66917 11.3046 3.88315 11.2906 3.98942C12.3747 4.01879 12.7623 4.26153 12.5024 4.90895C12.0736 5.88315 11.1745 7.72874 10.9987 8.0655C10.4488 6.91609 10.0991 6.03144 9.50046 4.78881C9.24222 4.21298 9.81234 3.98881 10.4153 3.97208V3.568L5.96451 3.55434C5.96777 3.74403 5.96022 3.85031 5.96022 3.98901C6.58052 3.99839 7.38562 4.06469 7.70668 4.60482C8.13238 5.43358 9.55145 8.72394 9.98083 9.60513C9.43315 10.6562 8.1028 13.1423 7.62611 14.0749C6.94319 12.5593 4.41713 6.59115 3.70321 5.05071C3.43723 4.39432 4.46446 4.01512 5.05885 3.98738L5.06272 3.54924L0 3.54883C0.00101989 3.6806 0.00550739 3.89763 0.00591535 3.99493C0.826925 3.98738 2.02692 5.33567 2.36961 6.17402C3.84722 9.60309 5.37195 13.0122 6.84243 16.4441C6.84283 16.45 7.3026 16.4561 7.3077 16.4457C8.26986 14.4767 9.39419 12.4076 10.4094 10.4161L12.9705 16.4488C12.9715 16.4496 13.3952 16.452 13.3974 16.4502C15.0215 12.7386 17.455 7.04317 18.2509 5.24511C18.5748 4.47672 19.1168 4.00819 19.9935 3.98167L20 3.58269L19.9945 3.56249Z" fill="white" />
+                </svg>
+              </a>
+            </div>
+          </nav>
+          <div class="header__buttons">
+            <a class="button button-outline button--reg" href="registration.html">Регистрация</a>
+            <a class="button button-outline button-outline--mod" href="entry.html">Вход</a>
+            <button class="burger" id="hamb" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+              <span class="burger__line" aria-hidden="true"></span>
+              <span class="burger__line" aria-hidden="true"></span>
+              <span class="burger__line" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="hero">
+        <div class="hero__content _container">
+          <div class="hero__body">
+            <h1 class="title">Начни работу вебкам моделью и зарабатывай от $1000 в месяц!</h1>
+            <p class="hero__text">Ежедневные выплаты, свободный график, <br> полная анонимность</p>
+            <a class="button button-filled" href="registration.html">Регистрация</a>
+          </div>
+          <div class="hero__wrap">
+            <div class="hero__hearts">
+              <img src="images/icons/hearts.svg" alt="hearts" width="150" height="220">
+            </div>
+            <div class="hero__block hero__block--mod _anim-items">
+              <div class="hero__item hero__item--mod _anim-items">
+                <h3 class="hero__item_name">DanielM</h3>
+                <div class="hero__item_inner">
+                  <p class="hero__item_text">Queen energy</p>
+                  <div class="hero__item_icon">💎💖</div>
+                </div>
+              </div>
+              <div class="hero__sum hero__sum--mod _anim-items">
+                <h3 class="hero__sum_name">CryptoKing</h3>
+                <p class="hero__sum_text">+7 777 tokens</p>
+              </div>
+              <div class="hero__item _anim-items">
+                <h3 class="hero__item_name">BigBoss</h3>
+                <div class="hero__item_inner">
+                  <p class="hero__item_text">You have such an amazing smile!</p>
+                  <div class="hero__item_icon">🔥</div>
+                </div>
+              </div>
+              <div class="hero__sum _anim-items">
+                <h3 class="hero__sum_name">GoldenDrop</h3>
+                <p class="hero__sum_text">+10 000 tokens</p>
+              </div>
+            </div>
+            <div class="hero__block">
+              <div class="message _anim-items">
+                <div class="message__top">
+                  <div class="message__logo">
+                    <img src="images/icons/monobank.svg" alt="logo monobank">
+                    <span>Monobank</span>
+                  </div>
+                  <span class="message__time">2 минуты назад</span>
+                </div>
+                <div class="message__body">
+                  <div class="message__crediting">
+                    <h4 class="message__title">Зачисление перевода</h4>
+                    <p class="message__text">Карта •• 5375 – Баланс: 184 210 ₴</p>
+                  </div>
+                  <span class="message__sum">+ 70 000  ₴</span>
+                </div>
+              </div>
+              <div class="message _anim-items">
+                <div class="message__top">
+                  <div class="message__logo">
+                    <img src="images/icons/sberbank.svg" alt="logo sberbank">
+                    <span>Сбербанк</span>
+                  </div>
+                  <span class="message__time">4 часа назад</span>
+                </div>
+                <div class="message__body">
+                  <div class="message__crediting">
+                    <h4 class="message__title">Зачисление перевода</h4>
+                    <p class="message__text">Карта •• 9755 – Баланс: 932 640 ₽</p>
+                  </div>
+                  <span class="message__sum">+ 150 000  ₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="translator">
+        <div class="translator__content _container">
+          <div class="translator__body">
+            <div class="translator__dialog">
+              <div class="hero__sum _anim-items">
+                <h3 class="hero__sum_name">CryptoKing</h3>
+                <p class="hero__sum_text">+7 777 tokens</p>
+              </div>
+              <div class="hero__item hero__item--right _anim-items">
+                <h3 class="hero__item_name">Anasti</h3>
+                <div class="hero__item_inner hero__item_inner--mod">
+                  <p class="hero__item_text">So generous… I like that</p>
+                  <div class="hero__item_icon">💖</div>
+                </div>
+              </div>
+              <div class="hero__item hero__item--left _anim-items">
+                <h3 class="hero__item_name">CryptoKing</h3>
+                <div class="hero__item_inner">
+                  <p class="hero__item_text">Just because you're stunning</p>
+                </div>
+              </div>
+              <label class="translator__label">
+                <span class="translator__message _anim-items">Just for that? 😏
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="20" height="20" rx="10" fill="#E8C662" />
+                    <path d="M10.5462 4.50781L10.7774 4.27654C11.0695 3.9845 11.0695 3.51105 10.7774 3.21901C10.4854 2.92702 10.0119 2.92697 9.71991 3.21901L8.21903 4.71993C7.92699 5.01197 7.92699 5.48542 8.21903 5.77746L9.71991 7.27833C9.86593 7.42435 10.0573 7.49739 10.2486 7.49739C10.44 7.49739 10.6314 7.4244 10.7774 7.27833C11.0694 6.98629 11.0694 6.51284 10.7774 6.2208L10.5627 6.00614C13.3151 6.1692 15.5044 8.45965 15.5044 11.2522C15.5044 11.6652 15.8392 12 16.2522 12C16.6652 12 17 11.6652 17 11.2522C17 7.62925 14.1313 4.6641 10.5462 4.50781Z" fill="white" />
+                    <path d="M11.781 14.2225L10.2801 12.7217C9.98812 12.4296 9.51462 12.4296 9.22258 12.7217C8.93054 13.0137 8.93054 13.4872 9.22258 13.7792L9.43725 13.9939C6.68492 13.8308 4.49558 11.5404 4.49558 8.74779C4.49558 8.33481 4.16077 8 3.74779 8C3.33481 8 3 8.33481 3 8.74779C3 12.3708 5.86868 15.3359 9.45385 15.4922L9.22258 15.7235C8.93054 16.0155 8.93054 16.489 9.22258 16.781C9.3686 16.927 9.55998 17 9.75132 17C9.94265 17 10.1341 16.927 10.2801 16.7809L11.7809 15.2801C12.073 14.988 12.073 14.5146 11.781 14.2225Z" fill="white" />
+                  </svg>
+                </span>
+                <input class="translator__input" name="input" type="text" placeholder="Только из-за этого? 😏">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="34.7266" height="34.7266" rx="17.3633" fill="#E8C662" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.60949 11.2316C9.54725 10.9834 9.55754 10.7225 9.63914 10.48C9.72075 10.2375 9.87023 10.0235 10.0698 9.86347C10.2695 9.70339 10.5108 9.60397 10.7653 9.577C11.0197 9.55003 11.2765 9.59664 11.5053 9.71131L24.4169 16.1671C24.6392 16.2781 24.8262 16.4487 24.9569 16.66C25.0876 16.8713 25.1569 17.1149 25.1569 17.3633C25.1569 17.6118 25.0876 17.8553 24.9569 18.0666C24.8262 18.2779 24.6392 18.4486 24.4169 18.5595L11.5053 25.0153C11.2765 25.13 11.0197 25.1766 10.7653 25.1496C10.5108 25.1227 10.2695 25.0233 10.0698 24.8632C9.87023 24.7031 9.72075 24.4891 9.63914 24.2466C9.55754 24.0041 9.54725 23.7433 9.60949 23.4951L10.9615 18.0883L18.8129 17.3633L10.9615 16.6384L9.60949 11.2316Z" fill="white" />
+                </svg>
+              </label>
+            </div>
+            <div class="translator__info">
+              <div class="translator__image">
+                <img class="translator__arrow translator__arrow--right" src="images/icons/arrow-r.svg" alt="translator icon" width="74" height="74" loading="lazy">
+                <img class="translator__image_ru" src="images/icons/ru.svg" alt="translator icon" width="122" height="146" loading="lazy">
+                <img class="translator__image_en" src="images/icons/en.svg" alt="translator icon" width="122" height="146" loading="lazy">
+                <img class="translator__arrow translator__arrow--left" src="images/icons/arrow-l.svg" alt="translator icon" width="74" height="74" loading="lazy">
+              </div>
+              <div class="translator__wrap">
+                <h2 class="subtitle">Общайся легко <br> без знания английского!</h2>
+                <p class="text">Встроенный переводчик поможет общаться с посетителями чатов на любом языке.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="info__content _container">
+          <div class="info__body">
+            <h2 class="subtitle">За хорошие сессии <br> в день наши веб-модели зарабатывают более 1000$!</h2>
+            <div class="slider">
+              <div class="swiper-wrapper swiper-wrapper--mod">
+                <div class="swiper-slide">
+                  <div class="info__item">
+                    <div class="info__logo">
+                      <img src="images/icons/StripChat_logo1.svg" alt="logo" width="200" height="49" loading="lazy">
+                    </div>
+                    <h3 class="info__title info__title--mod">заработок за день:</h3>
+                    <div class="slider-mini">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img1.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img2.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img1.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img2.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="slider-arrows">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="info__item">
+                    <div class="info__logo">
+                      <img src="images/icons/BongoChat_logo.svg" alt="logo" width="200" height="49" loading="lazy">
+                    </div>
+                    <h3 class="info__title info__title--mod">заработок за день:</h3>
+                    <div class="slider-mini">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img2.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img1.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img2.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img1.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="slider-arrows">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="info__item">
+                    <div class="info__logo">
+                      <img src="images/icons/StripChat_logo1.svg" alt="logo" width="200" height="49" loading="lazy">
+                    </div>
+                    <h3 class="info__title info__title--mod">заработок за день:</h3>
+                    <div class="slider-mini">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img1.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img2.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img1.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img2.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="slider-arrows">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="info__item">
+                    <div class="info__logo">
+                      <img src="images/icons/BongoChat_logo.svg" alt="logo" width="200" height="49" loading="lazy">
+                    </div>
+                    <h3 class="info__title info__title--mod">заработок за день:</h3>
+                    <div class="slider-mini">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img2.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img1.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img2.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img1.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="slider-arrows">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="info__item">
+                    <div class="info__logo">
+                      <img src="images/icons/BongoChat_logo.svg" alt="logo" width="200" height="49" loading="lazy">
+                    </div>
+                    <h3 class="info__title info__title--mod">заработок за день:</h3>
+                    <div class="slider-mini">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img2.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img1.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img2.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/content/slder-mini-img1.webp" alt="img" width="340" height="72" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="slider-arrows">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <a class="button button-filled" href="registration.html">Попробовать сейчас</a>
+          </div>
+        </div>
+        <div class="info__bg _ibg">
+          <picture>
+            <source media="(max-width: 770px)" srcset="images/content/earnings-m.webp">
+            <source media="(max-width: 1025px)" srcset="images/content/earnings-t.webp">
+            <img src="images/content/earnings.webp" alt="img" width="1920" height="1000" loading="lazy">
+          </picture>
+        </div>
+      </section>
+
+      <section class="payment">
+        <div class="payment__content _container">
+          <div class="payment__body">
+            <div class="payment__methods">
+              <div class="payment__method payment__method--mod">
+                <img src="images/icons/payment-icon1.svg" alt="icon" width="63" height="40" loading="lazy">
+                <img src="images/icons/payment-icon2.svg" alt="icon" width="63" height="40" loading="lazy">
+                <img src="images/icons/payment-icon3.svg" alt="icon" width="118" height="40" loading="lazy">
+              </div>
+              <div class="payment__method">
+                <img src="images/icons/payment-icon4.svg" alt="icon" width="40" height="40" loading="lazy">
+                <img src="images/icons/payment-icon5.svg" alt="icon" width="40" height="40" loading="lazy">
+                <img src="images/icons/payment-icon6.svg" alt="icon" width="40" height="40" loading="lazy">
+                <img src="images/icons/payment-icon7.svg" alt="icon" width="80" height="40" loading="lazy">
+              </div>
+              <div class="payment__method">
+                <img src="images/icons/payment-icon8.svg" alt="icon" width="40" height="40" loading="lazy">
+                <img src="images/icons/payment-icon9.svg" alt="icon" width="40" height="40" loading="lazy">
+              </div>
+              <div class="payment__method">
+                <img src="images/icons/payment-icon10.svg" alt="icon" width="40" height="40" loading="lazy">
+                <img src="images/icons/payment-icon11.svg" alt="icon" width="40" height="40" loading="lazy">
+                <img src="images/icons/payment-icon12.svg" alt="icon" width="133" height="40" loading="lazy">
+              </div>
+            </div>
+            <div class="payment__info">
+              <h2 class="subtitle">Получай деньги любым удобным способом!</h2>
+              <p class="text">Банковские карты, банковские переводы (Россия / СНГ), криптовалюта, электронные кошельки / платёжные системы</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info info--mod">
+        <div class="info__content _container">
+          <div class="info__body info__body--width">
+            <h2 class="subtitle">Наши активные модели зарабатывают более $5000 в месяц!</h2>
+            <div class="slider-payments">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="info__item">
+                    <div class="info__item_top">
+                      <h3 class="info__item_title">Выплаты</h3>
+                      <span class="info__item_sum">$4,563.71</span>
+                    </div>
+                    <div class="info__item_image">
+                      <img src="images/content/photo-sum.webp" alt="img" width="550" height="240" loading="lazy">
+                    </div>
+                    <a class="button button-filled" href="registration.html">И это только за полмесяца!</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="info__item">
+                    <div class="info__item_top">
+                      <h3 class="info__item_title">Выплаты</h3>
+                      <span class="info__item_sum">$4,563.71</span>
+                    </div>
+                    <div class="info__item_image">
+                      <img src="images/content/photo-sum.webp" alt="img" width="550" height="240" loading="lazy">
+                    </div>
+                    <a class="button button-filled" href="registration.html">И это только за полмесяца!</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="info__item">
+                    <div class="info__item_top">
+                      <h3 class="info__item_title">Выплаты</h3>
+                      <span class="info__item_sum">$4,563.71</span>
+                    </div>
+                    <div class="info__item_image">
+                      <img src="images/content/photo-sum.webp" alt="img" width="550" height="240" loading="lazy">
+                    </div>
+                    <a class="button button-filled" href="registration.html">И это только за полмесяца!</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="info__item">
+                    <div class="info__item_top">
+                      <h3 class="info__item_title">Выплаты</h3>
+                      <span class="info__item_sum">$4,563.71</span>
+                    </div>
+                    <div class="info__item_image">
+                      <img src="images/content/photo-sum.webp" alt="img" width="550" height="240" loading="lazy">
+                    </div>
+                    <a class="button button-filled" href="registration.html">И это только за полмесяца!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="info__bg _ibg">
+          <picture>
+            <source media="(max-width: 770px)" srcset="images/content/earnings1-m.webp">
+            <source media="(max-width: 1025px)" srcset="images/content/earnings1-t.webp">
+            <img src="images/content/earnings1.webp" alt="img" width="1920" height="1000" loading="lazy">
+          </picture>
+        </div>
+      </section>
+
+      <section class="calculate">
+        <div class="calculate__content _container">
+          <h2 class="subtitle">Рассчитайте свой заработок</h2>
+          <div class="calculate__body">
+            <div class="calculator">
+              <h3 class="calculator__title">Калькулятор дохода</h3>
+              <div class="calculator__item">
+                <h4 class="calculator__item_title">Знание английского</h4>
+                  <div class="radio-buttons">
+                    <label class="radio-button">
+                      <input type="radio" name="option-1" value="1" checked>
+                      <span class="custom-radio"></span>
+                      <span class="label-text">Работа с онлайн <br> переводчиком</span>
+                    </label>
+                    <label class="radio-button">
+                      <input type="radio" name="option-1" value="2">
+                      <span class="custom-radio"></span>
+                      <span class="label-text">Владею языком</span>
+                    </label>
+                  </div>
+              </div>
+              <div class="calculator__item">
+                <h4 class="calculator__item_title">Количество смен в неделю</h4>
+                <div class="calculator-container">
+                  <div class="calculator__bubble">0</div>
+                  <label for="rangeShifts" class="visually-hidden">Количество смен в неделю</label>
+                  <input class="calculator__range" id="rangeShifts" type="range" min="0" max="7" step="1" value="4">
+                  <div class="ticks">
+                      <span>0</span><span>7</span>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator__item">
+                <h4 class="calculator__item_title">Опыт работы в месяцах</h4>
+                <div class="calculator-container">
+                  <div class="calculator__bubble">0</div>
+                  <label for="rangeExp" class="visually-hidden">Опыт работы в месяцах</label>
+                  <input class="calculator__range" id="rangeExp" type="range" min="0" max="12" step="1" value="7">
+                  <div class="ticks">
+                      <span>0</span><span>12</span>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator__bottom">
+                <p class="calculator__bottom_text">Доход за <strong>неделю</strong></p>
+                <span class="calculator__sum">30 000 ₽</span>
+              </div>
+              <a class="button button-filled" href="registration.html">Заполнить анкету</a>
+            </div>
+          </div>
+        </div>
+        <div class="calculate__bg _ibg">
+          <picture>
+            <source media="(max-width: 650px)" srcset="images/content/calc-650.webp">
+            <source media="(max-width: 770px)" srcset="images/content/calc-m.webp">
+            <source media="(max-width: 1025px)" srcset="images/content/calc-t.webp">
+            <img src="images/content/calc.webp" alt="img" width="1920" height="1000" loading="lazy">
+          </picture>
+        </div>
+      </section>
+
+      <section class="anonymous">
+        <div class="anonymous__content _container">
+          <div class="anonymous__body">
+            <div class="anonymous__image">
+              <img src="images/content/mask.webp" alt="img" width="630" height="320" loading="lazy">
+            </div>
+            <div class="anonymous__info">
+              <h2 class="subtitle">Анонимность и конфиденциальность вебкам модели</h2>
+              <p class="text">Все ваши личные данные строго конфиденциальны и используются только для определения вашего возраста (работать могут только лица старше 18 лет) и идентификации личности.</p>
+              <p class="text">Вы работаете под псевдонимом, пользователи из России и русскоязычных стран СНГ полностью блокируются.</p>
+              <p class="text">Юридическая и техническая служба всегда на страже и готова помочь вам решить любые вопросы.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="info__content _container">
+          <div class="info__body info__body--mod">
+            <h2 class="subtitle">Вы можете получать выплаты ежедневно или сразу после заработка на вебкам сайте!</h2>
+            <div class="slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="message">
+                    <div class="message__top">
+                      <div class="message__logo">
+                        <img src="images/icons/monobank.svg" alt="logo monobank">
+                        <span>Monobank</span>
+                      </div>
+                      <span class="message__time">2 минуты назад</span>
+                    </div>
+                    <div class="message__body">
+                      <div class="message__crediting">
+                        <h4 class="message__title">Зачисление перевода</h4>
+                        <p class="message__text">Карта •• 5375 – Баланс: 184 210 ₽</p>
+                      </div>
+                      <span class="message__sum">+ 70 000  ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="message">
+                    <div class="message__top">
+                      <div class="message__logo">
+                        <img src="images/icons/sberbank.svg" alt="logo sberbank">
+                        <span>Сбербанк</span>
+                      </div>
+                      <span class="message__time">4 часа назад</span>
+                    </div>
+                    <div class="message__body">
+                      <div class="message__crediting">
+                        <h4 class="message__title">Зачисление перевода</h4>
+                        <p class="message__text">Карта •• 9755 – Баланс: 932 640 ₽</p>
+                      </div>
+                      <span class="message__sum">+ 150 000  ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="message">
+                    <div class="message__top">
+                      <div class="message__logo">
+                        <img src="images/icons/sberbank.svg" alt="logo sberbank">
+                        <span>Сбербанк</span>
+                      </div>
+                      <span class="message__time">4 часа назад</span>
+                    </div>
+                    <div class="message__body">
+                      <div class="message__crediting">
+                        <h4 class="message__title">Зачисление перевода</h4>
+                        <p class="message__text">Карта •• 9755 – Баланс: 32 640 ₽</p>
+                      </div>
+                      <span class="message__sum">+ 100 000  ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="message">
+                    <div class="message__top">
+                      <div class="message__logo">
+                        <img src="images/icons/sberbank.svg" alt="logo sberbank">
+                        <span>Сбербанк</span>
+                      </div>
+                      <span class="message__time">4 часа назад</span>
+                    </div>
+                    <div class="message__body">
+                      <div class="message__crediting">
+                        <h4 class="message__title">Зачисление перевода</h4>
+                        <p class="message__text">Карта •• 9755 – Баланс: 320 640 ₽</p>
+                      </div>
+                      <span class="message__sum">+ 200 000  ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="message">
+                    <div class="message__top">
+                      <div class="message__logo">
+                        <img src="images/icons/sberbank.svg" alt="logo sberbank">
+                        <span>Сбербанк</span>
+                      </div>
+                      <span class="message__time">4 часа назад</span>
+                    </div>
+                    <div class="message__body">
+                      <div class="message__crediting">
+                        <h4 class="message__title">Зачисление перевода</h4>
+                        <p class="message__text">Карта •• 9755 – Баланс: 320 640 ₽</p>
+                      </div>
+                      <span class="message__sum">+ 200 000  ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="message">
+                    <div class="message__top">
+                      <div class="message__logo">
+                        <img src="images/icons/sberbank.svg" alt="logo sberbank">
+                        <span>Сбербанк</span>
+                      </div>
+                      <span class="message__time">4 часа назад</span>
+                    </div>
+                    <div class="message__body">
+                      <div class="message__crediting">
+                        <h4 class="message__title">Зачисление перевода</h4>
+                        <p class="message__text">Карта •• 9755 – Баланс: 32 640 ₽</p>
+                      </div>
+                      <span class="message__sum">+ 100 000  ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="message">
+                    <div class="message__top">
+                      <div class="message__logo">
+                        <img src="images/icons/sberbank.svg" alt="logo sberbank">
+                        <span>Сбербанк</span>
+                      </div>
+                      <span class="message__time">4 часа назад</span>
+                    </div>
+                    <div class="message__body">
+                      <div class="message__crediting">
+                        <h4 class="message__title">Зачисление перевода</h4>
+                        <p class="message__text">Карта •• 9755 – Баланс: 320 640 ₽</p>
+                      </div>
+                      <span class="message__sum">+ 200 000  ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="message">
+                    <div class="message__top">
+                      <div class="message__logo">
+                        <img src="images/icons/sberbank.svg" alt="logo sberbank">
+                        <span>Сбербанк</span>
+                      </div>
+                      <span class="message__time">4 часа назад</span>
+                    </div>
+                    <div class="message__body">
+                      <div class="message__crediting">
+                        <h4 class="message__title">Зачисление перевода</h4>
+                        <p class="message__text">Карта •• 9755 – Баланс: 320 640 ₽</p>
+                      </div>
+                      <span class="message__sum">+ 200 000  ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="info__bg _ibg">
+          <picture>
+            <source media="(max-width: 770px)" srcset="images/content/earnings2-m.webp">
+            <source media="(max-width: 1025px)" srcset="images/content/earnings2-t.webp">
+            <img src="images/content/earnings2.webp" alt="img" width="1920" height="1000" loading="lazy">
+          </picture>
+        </div>
+      </section>
+
+      <section class="why-webmodel">
+        <div class="why-webmodel__content _container">
+          <h2 class="subtitle">Почему выбирают WebModel?</h2>
+          <p class="text"><strong>WebModel</strong> – ваш пропуск к успешной карьере вебкам-модели из дома!</p>
+          <div class="why-webmodel__body">
+            <div class="why-webmodel__col">
+              <div class="why-webmodel__wrap">
+                <p class="why-webmodel__text">Мы предоставляем доступ к <strong>26 различным вебкам-платформам</strong>, каждая из которых имеет свою уникальную аудиторию и стиль работы.</p>
+                <div class="slider-mini">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="why-webmodel__logos">
+                        <img src="images/icons/webmodel-logo1.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo2.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo3.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo4.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo5.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo6.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo7.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo8.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo9.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo10.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo11.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo12.svg" alt="logo" width="150" height="100" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="why-webmodel__logos">
+                        <img src="images/icons/webmodel-logo1.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo2.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo3.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo4.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo5.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo6.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo7.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo8.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo9.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo10.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo11.svg" alt="logo" width="150" height="100" loading="lazy">
+                        <img src="images/icons/webmodel-logo12.svg" alt="logo" width="150" height="100" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-arrows">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="why-webmodel__inner">
+                <div class="why-webmodel__item">
+                  <p class="why-webmodel__item_text">Регулярно публикуем <strong>бесплатные образовательные материалы</strong> в телеграме и на YouTube: руководства, советы по настройке, а также реальные примеры работы без обнажения. </p>
+                  <div class="why-webmodel__item_icon">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M98.8046 24.0052L76.0635 7.36535C75.8784 7.22905 75.6655 7.13526 75.44 7.09069C75.2145 7.04612 74.9819 7.05185 74.7589 7.10748L47.4399 14.0369C47.1531 14.1101 46.893 14.2632 46.6898 14.4785C46.4866 14.6937 46.3488 14.9623 46.2923 15.2528C46.2358 15.5434 46.263 15.844 46.3708 16.1197C46.4785 16.3954 46.6624 16.6348 46.9009 16.8101L54.1348 22.0911L52.5723 30.0125C51.7208 34.4341 58.8219 41.4338 68.3918 43.293C70.0702 43.617 71.7758 43.7792 73.4852 43.7774C76.1059 43.7937 78.7121 43.3875 81.2035 42.5744C85.0315 41.3011 87.5859 39.176 88.0314 36.9028L89.5939 29.0047L98.273 26.8095C98.5598 26.7364 98.82 26.5833 99.0231 26.368C99.2263 26.1527 99.3642 25.8842 99.4206 25.5936C99.4771 25.3031 99.4499 25.0024 99.3422 24.7268C99.2344 24.4511 99.0506 24.2116 98.812 24.0364L98.8046 24.0052ZM84.9849 36.3014C84.8051 37.2154 83.11 38.645 80.2273 39.606C76.5872 40.7455 72.7197 40.955 68.9778 40.2153C60.1892 38.5044 55.2832 32.5594 55.6973 30.6065L56.9551 24.1303L69.642 33.4423C69.9091 33.6392 70.232 33.7459 70.5638 33.747C70.696 33.7479 70.8276 33.7295 70.9544 33.6924L86.2349 29.8254L84.9849 36.3014ZM70.9231 30.4892L51.4319 16.2399L74.8135 10.3183L94.2812 24.5597L70.9231 30.4892ZM37.6514 44.0744C37.4164 44.2101 37.2207 44.4046 37.0837 44.6389C36.9468 44.8731 36.8731 45.139 36.8701 45.4104V73.2838C36.8732 73.5552 36.9468 73.821 37.0838 74.0553C37.2208 74.2895 37.4164 74.4841 37.6514 74.6198C37.8863 74.765 38.1564 74.8434 38.4326 74.8463C38.6851 74.8486 38.9344 74.7896 39.159 74.6744L65.7984 60.7298C66.0503 60.5972 66.2612 60.3984 66.4084 60.1547C66.5555 59.911 66.6333 59.6318 66.6333 59.3471C66.6333 59.0624 66.5555 58.7832 66.4084 58.5395C66.2612 58.2958 66.0503 58.097 65.7984 57.9644L39.1825 44.0198C38.9441 43.8966 38.678 43.837 38.4098 43.8466C38.1416 43.8561 37.8804 43.9346 37.6514 44.0744ZM39.9951 47.9805L61.7049 59.347L40.0186 70.7057L39.9951 47.9805Z" fill="url(#paint0_linear_365_404)" />
+                      <path d="M95.3077 83.5645H87.2847C87.4235 83.1274 87.4946 82.6717 87.4955 82.2131V46.0664C87.4955 45.652 87.3309 45.2545 87.0379 44.9615C86.7449 44.6685 86.3474 44.5039 85.933 44.5039C85.5186 44.5039 85.1212 44.6685 84.8282 44.9615C84.5351 45.2545 84.3705 45.652 84.3705 46.0664V82.2129C84.3675 82.3934 84.3289 82.5716 84.257 82.7372C84.1851 82.9028 84.0812 83.0526 83.9514 83.1781C83.8216 83.3036 83.6683 83.4023 83.5004 83.4686C83.3324 83.5348 83.153 83.5674 82.9725 83.5643H13.8977C13.7171 83.5674 13.5378 83.5349 13.3698 83.4687C13.2018 83.4025 13.0485 83.3039 12.9186 83.1784C12.7888 83.0529 12.6849 82.9031 12.613 82.7375C12.541 82.5719 12.5024 82.3938 12.4993 82.2132V34.9184C12.5023 34.7378 12.5409 34.5597 12.6128 34.394C12.6847 34.2284 12.7886 34.0786 12.9184 33.9531C13.0482 33.8276 13.2015 33.7289 13.3694 33.6626C13.5374 33.5964 13.7168 33.5639 13.8973 33.5669H48.4349C48.8493 33.5669 49.2467 33.4023 49.5397 33.1093C49.8328 32.8162 49.9974 32.4188 49.9974 32.0044C49.9974 31.59 49.8328 31.1926 49.5397 30.8996C49.2467 30.6065 48.8493 30.4419 48.4349 30.4419H13.8977C11.4143 30.4333 9.39159 32.4349 9.37444 34.9182V82.2127C9.37537 82.6714 9.44641 83.1271 9.58532 83.5641H1.5625C1.1481 83.5641 0.750671 83.7287 0.457646 84.0218C0.16462 84.3148 0 84.7122 0 85.1266L0 85.5172C0 89.0327 2.76551 92.9387 6.47617 92.9387H90.3938C94.1045 92.9387 96.87 89.0327 96.87 85.5172V85.1266C96.8699 84.7123 96.7052 84.315 96.4123 84.0221C96.1193 83.7291 95.722 83.5645 95.3077 83.5645ZM90.3938 89.8141H6.47617C5.12474 89.8141 3.74981 88.3767 3.28889 86.6893H93.5811C93.1202 88.3767 91.7452 89.8141 90.3938 89.8141Z" fill="url(#paint1_linear_365_404)" />
+                      <defs>
+                        <linearGradient id="paint0_linear_365_404" x1="36.8701" y1="57.8517" x2="99.6006" y2="57.5799" gradientUnits="userSpaceOnUse">
+                          <stop offset="0%" stop-color="#B38D2A" />
+                          <stop offset="0.3125" stop-color="#F7EF8A" />
+                          <stop offset="0.625" stop-color="#D0AA45" />
+                          <stop offset="1" stop-color="#E8C662" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_365_404" x1="2.31576e-09" y1="77.2699" x2="97.1009" y2="76.5637" gradientUnits="userSpaceOnUse">
+                          <stop offset="0%" stop-color="#B38D2A" />
+                          <stop offset="0.3125" stop-color="#F7EF8A" />
+                          <stop offset="0.625" stop-color="#D0AA45" />
+                          <stop offset="1" stop-color="#E8C662" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+                <div class="why-webmodel__item">
+                  <p class="why-webmodel__item_text">Мы предлагаем неограниченное количество <strong>индивидуальных консультаций без оплаты</strong>, чтобы ваша работа была не только прибыльной, но и приятной.</p>
+                  <div class="why-webmodel__item_icon">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.8125 91.3594C1.64397 91.6193 1.55823 91.9242 1.5666 92.2338C1.57496 92.5435 1.67705 92.8433 1.85938 93.0938C2.15625 93.5156 2.64062 93.7656 3.14062 93.7656C3.25 93.7656 3.35938 93.7656 3.48438 93.7344L17.8438 90.5469C21.9844 92.6562 26.625 93.7656 31.2812 93.7656C47.4844 93.7656 60.6875 80.7031 60.9375 64.5469C67.9688 66.4531 75.6719 65.7344 82.2031 62.4219L96.5625 65.5937C96.6719 65.625 96.7812 65.625 96.9062 65.625C97.4062 65.625 97.8906 65.375 98.1875 64.9531C98.5469 64.4375 98.5625 63.75 98.2344 63.2187L92.375 53.9531C96.3291 48.7738 98.4703 42.438 98.4688 35.9219C98.4688 19.5469 85.1562 6.23438 68.7812 6.23438C52.4062 6.23438 39.375 19.2969 39.125 35.4375C36.625 34.75 34 34.3594 31.2812 34.3594C14.875 34.375 1.5625 47.6875 1.5625 64.0625C1.5625 70.5781 3.71875 76.9375 7.67188 82.0938L1.8125 91.3594ZM68.75 9.375C83.3906 9.375 95.3125 21.2969 95.3125 35.9375C95.3125 42.1094 93.1562 48.125 89.2188 52.8594C88.7812 53.375 88.7344 54.125 89.0938 54.6875L93.5469 61.7187L82.2969 59.2344C81.9375 59.1562 81.5469 59.2031 81.2188 59.375C74.9844 62.6875 67.4688 63.3281 60.7813 61.2344C59.7188 49.9687 52.3125 40.5156 42.1875 36.4844C42.1875 36.2969 42.1719 36.1094 42.1719 35.9219C42.1719 21.2812 54.0938 9.35937 68.7344 9.35937L68.75 9.375ZM4.6875 64.0625C4.6875 49.4219 16.6094 37.5 31.25 37.5C45.8906 37.5 57.8125 49.4219 57.8125 64.0625C57.8125 78.7031 45.8906 90.625 31.25 90.625C26.9062 90.625 22.5938 89.5469 18.7656 87.5C18.5401 87.3779 18.2878 87.3135 18.0312 87.3125C17.9219 87.3125 17.7969 87.3125 17.6875 87.3438L6.45312 89.8281L10.9062 82.7969C11.2656 82.2188 11.2188 81.4844 10.7969 80.9688C6.85938 76.2188 4.70312 70.2031 4.70312 64.0312L4.6875 64.0625Z" fill="url(#paint0_linear_365_422)" />
+                      <path d="M31.25 78.125C32.5444 78.125 33.5938 77.0757 33.5938 75.7812C33.5938 74.4868 32.5444 73.4375 31.25 73.4375C29.9556 73.4375 28.9062 74.4868 28.9062 75.7812C28.9062 77.0757 29.9556 78.125 31.25 78.125Z" fill="url(#paint1_linear_365_422)" />
+                      <path d="M31.25 51.5625C33.8281 51.5625 35.9375 53.6719 35.9375 56.25C35.9375 58.8281 33.8281 60.9375 31.25 60.9375C30.3906 60.9375 29.6875 61.6406 29.6875 62.5V70.3125H32.8125V63.9063C34.2608 63.6106 35.5955 62.9102 36.6616 61.8862C37.7277 60.8623 38.4815 59.557 38.8354 58.1218C39.1892 56.6866 39.1286 55.1805 38.6607 53.7783C38.1927 52.3762 37.3366 51.1356 36.1917 50.2006C35.0468 49.2656 33.6601 48.6746 32.1928 48.4962C30.7254 48.3178 29.2375 48.5594 27.902 49.1929C26.5664 49.8263 25.438 50.8257 24.6477 52.0749C23.8575 53.3241 23.4378 54.7718 23.4375 56.25H26.5625C26.5625 53.6719 28.6719 51.5625 31.25 51.5625ZM56.25 25H81.25V28.125H56.25V25ZM56.25 34.375H81.25V37.5H56.25V34.375ZM62.5 43.75H81.25V46.875H62.5V43.75Z" fill="url(#paint2_linear_365_422)" />
+                      <defs>
+                        <linearGradient id="paint0_linear_365_422" x1="1.5625" y1="71.8203" x2="98.7028" y2="71.3157" gradientUnits="userSpaceOnUse">
+                          <stop offset="0%" stop-color="#B38D2A" />
+                          <stop offset="0.3125" stop-color="#F7EF8A" />
+                          <stop offset="0.625" stop-color="#D0AA45" />
+                          <stop offset="1" stop-color="#E8C662" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_365_422" x1="28.9063" y1="76.9498" x2="33.6051" y2="76.9277" gradientUnits="userSpaceOnUse">
+                          <stop offset="0%" stop-color="#B38D2A" />
+                          <stop offset="0.3125" stop-color="#F7EF8A" />
+                          <stop offset="0.625" stop-color="#D0AA45" />
+                          <stop offset="1" stop-color="#E8C662" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_365_422" x1="23.4375" y1="58.952" x2="81.3888" y2="58.6051" gradientUnits="userSpaceOnUse">
+                          <stop offset="0%" stop-color="#B38D2A" />
+                          <stop offset="0.3125" stop-color="#F7EF8A" />
+                          <stop offset="0.625" stop-color="#D0AA45" />
+                          <stop offset="1" stop-color="#E8C662" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="why-webmodel__col">
+              <div class="why-webmodel__wrapper">
+                <div class="why-webmodel__images">
+                  <div class="why-webmodel__image">
+                    <img src="images/content/why-webmodel-photo1.webp" alt="img" width="193" height="260" loading="lazy">
+                  </div>
+                  <div class="why-webmodel__image">
+                    <img src="images/content/why-webmodel-photo3.webp" alt="img" width="197" height="340" loading="lazy">
+                  </div>
+                </div>
+                <div class="why-webmodel__images">
+                  <div class="why-webmodel__image">
+                    <img src="images/content/why-webmodel-photo2.webp" alt="img" width="193" height="370" loading="lazy">
+                  </div>
+                  <div class="why-webmodel__image">
+                    <img src="images/content/why-webmodel-photo4.webp" alt="img" width="193" height="295" loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <div class="why-webmodel__image why-webmodel__image--mod">
+                <img src="images/content/why-webmodel-photo5.webp" alt="img" width="400" height="220" loading="lazy">
+              </div>
+            </div>
+            <div class="why-webmodel__col">
+              <div class="why-webmodel__item why-webmodel__item--color1">
+                <p class="why-webmodel__item_text">Практические уроки позволяют вам увидеть, как происходит реальный заработок на вашем аккаунте.</p>
+              </div>
+              <div class="why-webmodel__item why-webmodel__item--color2">
+                <p class="why-webmodel__item_text">Вы получите круглосуточную поддержку, быструю подготовку аккаунтов к работе за пять минут, низкие комиссии (от 83% до 94%), быстрые выплаты на электронные и криптовалютные кошельки, а также на банковские карты.</p>
+              </div>
+              <div class="why-webmodel__item why-webmodel__item--mod">
+                <p class="why-webmodel__item_text">Наши профессиональные дизайнеры помогут улучшить ваш профиль и фотографии.</p>
+                <p class="why-webmodel__item_text">У нас есть привлекательная партнерская программа, которая включает 30% пожизненной комиссии и бонус в размере $10 за каждого приглашенного участника.</p>
+                <p class="why-webmodel__item_text">Мы награждаем активных моделей <strong>ежемесячными подарками</strong>, включая игрушки Lovense.</p>
+                <p class="why-webmodel__item_text">Мы используем только <strong>законные</strong> методы продвижения, что снижает риск блокировки.</p>
+                <p class="why-webmodel__item_text"><strong>Присоединяйтесь к нам - мы сосредоточены на вашем успехе!</strong></p>
+                <a class="button button-filled" href="registration.html">Присоединиться</a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info info--m">
+        <div class="info__content _container">
+          <div class="info__wrapper">
+            <div class="info__messages">
+              <div class="hero__item _anim-items">
+                <h3 class="hero__item_name">Mr.James</h3>
+                <img src="images/content/message1.webp" alt="img" width="400" height="73" loading="lazy">
+              </div>
+              <div class="hero__item hero__item--right _anim-items">
+                <h3 class="hero__item_name">Anasti</h3>
+                <img src="images/content/message2.webp" alt="img" width="400" height="73" loading="lazy">
+              </div>
+              <div class="hero__item _anim-items">
+                <h3 class="hero__item_name">Mr.James</h3>
+                <img src="images/content/message3.webp" alt="img" width="400" height="73" loading="lazy">
+              </div>
+              <div class="hero__sum _anim-items">
+                <p class="hero__sum_text">+2 500 tokens</p>
+              </div>
+              <div class="hero__item hero__item--right _anim-items">
+                <h3 class="hero__item_name">Anasti</h3>
+                <img src="images/content/message4.webp" alt="img" width="400" height="73" loading="lazy">
+              </div>
+            </div>
+            <div class="info__col">
+              <h2 class="subtitle">Первый заработок</h2>
+              <p class="text">вы получите с помощью наших кураторов, которые за вас будут общаться в платном онлайн-чате, вам нужно только смотреть, 
+                как это происходит и настраиваться на хороший доход</p>
+            </div>
+          </div>
+        </div>
+        <div class="info__bg _ibg">
+          <picture>
+            <source media="(max-width: 770px)" srcset="images/content/earnings3-m.webp">
+            <source media="(max-width: 1025px)" srcset="images/content/earnings3-t.webp">
+            <img src="images/content/earnings3.webp" alt="img" width="1920" height="1000" loading="lazy">
+          </picture>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__content _container">
+          <div class="reviews__top">
+            <h2 class="subtitle">Отзывы</h2>
+            <div class="reviews__leaf">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_381_183)">
+                  <path d="M33.9638 17.46C32.2832 15.7468 30.5361 14.1002 28.7264 12.524C27.1891 10.8586 24.2624 10.2253 22.6784 12.1586C20.7718 10.72 18.3038 11.9506 17.2638 13.844C15.2931 13.1107 13.5558 14.5493 12.5451 16.1306L8.99577 12.588C8.68146 12.2381 8.3004 11.9546 7.87498 11.754C7.44956 11.5534 6.98835 11.4398 6.51844 11.42C4.45977 11.5693 2.55177 13.3786 2.46777 15.4706C2.50777 16.42 2.92911 17.3133 3.63577 17.9493L11.4291 25.7426C7.28111 28.732 11.5838 32.8213 14.0904 35.472C18.8051 41.0773 28.5051 40.9947 33.4878 35.7786C38.6744 30.868 38.9144 22.6266 33.9638 17.46ZM32.3731 34.068C29.6291 37.16 25.3398 38.192 21.3664 37.3973C17.3451 36.9226 14.8691 33.4547 12.4664 30.5627C11.5651 29.4747 11.2278 28.2027 12.8518 27.1653L18.3998 32.7133C19.3224 33.5987 20.7078 32.232 19.8144 31.3L5.04911 16.5346C3.68644 15.4706 5.16111 13.5826 6.50244 13.4173C6.92377 13.4653 7.31177 13.6733 7.58244 14L17.5464 23.964C18.4704 24.8533 19.8531 23.4786 18.9611 22.5506L13.9838 17.5733C15.4531 15.1786 16.5758 15.0866 18.5438 17.0653L21.8664 20.3853C22.7744 21.3213 24.2118 19.94 23.3038 18.9946C22.5584 18.3253 19.7824 15.3493 19.0118 14.8213C20.0198 13.5533 20.5984 12.7106 22.7411 14.808L26.3224 18.3853C27.2491 19.3053 28.6598 17.9 27.7371 16.9706L24.2171 13.452C25.2424 12.4706 26.0864 12.916 27.4078 14.0306C29.2811 15.68 30.2638 16.5893 32.3838 18.708C36.5998 22.948 36.5931 29.8333 32.3731 34.068ZM8.85844 7.85198H12.1451C13.4531 7.84665 13.4531 5.85732 12.1451 5.85198H11.5918C15.1014 3.31944 19.3818 2.08467 23.7011 2.35876C28.0204 2.63285 32.1104 4.39878 35.2718 7.35465C36.2304 8.24265 37.5944 6.78532 36.6371 5.88798C33.0478 2.53731 28.385 0.570578 23.4803 0.338579C18.5756 0.10658 13.748 1.6244 9.85844 4.62131V3.55465C9.85311 2.24798 7.86377 2.24665 7.85844 3.55465V6.85198C7.85844 7.40398 8.30644 7.85198 8.85844 7.85198Z" fill="url(#paint0_linear_381_183)" />
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear_381_183" x1="2.46777" y1="29.8136" x2="37.6168" y2="29.6667" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#B38D2A" />
+                    <stop offset="0.3125" stop-color="#F7EF8A" />
+                    <stop offset="0.625" stop-color="#D0AA45" />
+                    <stop offset="1" stop-color="#E8C662" />
+                  </linearGradient>
+                  <clipPath id="clip0_381_183">
+                    <rect width="40" height="40" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="reviews__leaf_text">Листайте</p>
+            </div>
+          </div>
+          <div class="reviews-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <div class="feedback__photo">
+                    <img src="images/content/feedback-icon1.webp" alt="icon" width="140" height="200" loading="lazy">
+                  </div>
+                  <p class="feedback__text">Я просто сидела в уютном халате, а чат работал за меня 🙈Теперь каждое утро — с кофе и уведомлениями о донатах. Спасибо вам, я наконец-то почувствовала, что могу быть желанной и при этом зарабатывать!</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <div class="feedback__photo">
+                    <img src="images/content/feedback-icon2.webp" alt="icon" width="140" height="200" loading="lazy">
+                  </div>
+                  <p class="feedback__text">Сначала было страшно — я не понимала, с чего начать. Но куратор буквально взял меня за руку и показал всё. Первые донаты прилетели уже в первую неделю. Спасибо агентству за поддержку и честность ❤️</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <div class="feedback__photo">
+                    <img src="images/content/feedback-icon3.webp" alt="icon" width="140" height="200" loading="lazy">
+                  </div>
+                  <p class="feedback__text">Ничего не умела и боялась камеры. Но оказалось, что можно начать даже без опыта — главное просто быть собой. Агентство очень помогает с настройкой, текстами и даже фотографиями.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <div class="feedback__photo">
+                    <img src="images/content/feedback-icon1.webp" alt="icon" width="140" height="200" loading="lazy">
+                  </div>
+                  <p class="feedback__text">Я просто сидела в уютном халате, а чат работал за меня 🙈Теперь каждое утро — с кофе и уведомлениями о донатах. Спасибо вам, я наконец-то почувствовала, что могу быть желанной и при этом зарабатывать!</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <div class="feedback__photo">
+                    <img src="images/content/feedback-icon2.webp" alt="icon" width="140" height="200" loading="lazy">
+                  </div>
+                  <p class="feedback__text">Сначала было страшно — я не понимала, с чего начать. Но куратор буквально взял меня за руку и показал всё. Первые донаты прилетели уже в первую неделю. Спасибо агентству за поддержку и честность ❤️</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <div class="feedback__photo">
+                    <img src="images/content/feedback-icon3.webp" alt="icon" width="140" height="200" loading="lazy">
+                  </div>
+                  <p class="feedback__text">Ничего не умела и боялась камеры. Но оказалось, что можно начать даже без опыта — главное просто быть собой. Агентство очень помогает с настройкой, текстами и даже фотографиями.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info info--right">
+        <div class="info__content _container">
+          <div class="info__body">
+            <h2 class="subtitle">Начни работу вебкам моделью через 10 минут после регистрации!</h2>
+            <p class="text">Зарегистрируйся, подключись к работе и получи первый заработок с моментальной выплатой на карту.</p>
+            <a class="button button-filled" href="registration.html">Быстрый старт</a>
+          </div>
+        </div>
+        <div class="info__bg _ibg">
+          <picture>
+            <source media="(max-width: 770px)" srcset="images/content/start-m.webp">
+            <source media="(max-width: 1025px)" srcset="images/content/start-t.webp">
+            <img src="images/content/start.webp" alt="img" width="1920" height="1000" loading="lazy">
+          </picture>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="work__content _container">
+          <div class="work__body">
+            <div class="work__col">
+              <h2 class="subtitle">Наши кураторы топовые вебкам модели</h2>
+              <p class="text text--mod">Они помогут вам настроить идеальную трансляцию, обучат секретам общения и поведения на стриме для самых высоких заработков!</p>
+              <p class="text">Мы вместе с вами пройдем полный курс обучения, затронем все нюансы работы и будем двигаться по направлению к вашим целям!</p>
+            </div>
+            <div class="work__col">
+              <div class="work__screen">
+                <div class="work__top">
+                  <div class="work__box">
+                    <span class="work__box_live">live</span>
+                    <div class="work__online">
+                      <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.93011 5.78044C5.72421 5.78044 6.41187 5.4956 6.97373 4.93364C7.5356 4.3718 7.82041 3.68434 7.82041 2.89014C7.82041 2.09617 7.5356 1.40864 6.97364 0.846583C6.41168 0.284811 5.72412 0 4.93011 0C4.13588 0 3.44839 0.284811 2.88655 0.846676C2.32471 1.40854 2.03978 2.0961 2.03978 2.89014C2.03978 3.68434 2.32469 4.3719 2.88665 4.93376C3.44861 5.49553 4.13617 5.78044 4.93011 5.78044ZM9.98736 9.22738C9.97114 8.99357 9.93838 8.73847 9.89012 8.46915C9.84142 8.19777 9.77872 7.94125 9.70363 7.70678C9.6261 7.46444 9.52063 7.22514 9.39027 6.99579C9.25494 6.75776 9.09601 6.55047 8.91765 6.37992C8.73116 6.20149 8.50284 6.05803 8.23879 5.95336C7.97568 5.8493 7.68407 5.79656 7.37217 5.79656C7.24966 5.79656 7.13121 5.84681 6.90241 5.99578C6.73978 6.10168 6.57666 6.20684 6.41306 6.31125C6.25587 6.41142 6.04291 6.50526 5.77988 6.59022C5.52326 6.67326 5.26271 6.71538 5.00553 6.71538C4.74837 6.71538 4.48789 6.67326 4.23099 6.59022C3.96826 6.50533 3.75531 6.41151 3.59828 6.31134C3.41617 6.19498 3.2514 6.08878 3.10848 5.99566C2.87997 5.84672 2.7614 5.79645 2.63891 5.79645C2.32689 5.79645 2.0354 5.84927 1.77236 5.95348C1.5085 6.05794 1.28008 6.2014 1.0934 6.38001C0.915163 6.55066 0.75614 6.75783 0.621 6.99579C0.490735 7.22512 0.385266 7.46435 0.307618 7.70688C0.232618 7.94134 0.169923 8.19777 0.12122 8.46915C0.0729628 8.73812 0.0401973 8.99329 0.0239787 9.22766C0.00784484 9.46352 -0.000152065 9.69986 2.18938e-06 9.93627C2.18938e-06 10.5627 0.199126 11.0698 0.591797 11.4438C0.979615 11.8128 1.49275 12 2.11677 12H7.89485C8.51887 12 9.03182 11.8129 9.41973 11.4438C9.81249 11.0701 10.0116 10.5629 10.0116 9.93617C10.0115 9.69439 10.0034 9.45589 9.98736 9.22738Z" fill="white" />
+                      </svg>
+                      <span class="work__online_num">1823</span>
+                    </div>
+                  </div>
+                  <div class="work__top_img">
+                    <img src="images/icons/work-icon.svg" alt="img" width="152" height="55" loading="lazy">
+                  </div>
+                </div>
+                <div class="work__dialog">
+                  <div class="work__dialog_inner">
+                  <div class="hero__item">
+                    <h3 class="hero__item_name">LeoWantsU</h3>
+                    <div class="hero__item_inner">
+                      <p class="hero__item_text">That smile just made my night</p>
+                    </div>
+                  </div>
+                  <div class="hero__item">
+                    <h3 class="hero__item_name">Mike_Dreams</h3>
+                    <div class="hero__item_inner">
+                      <p class="hero__item_text">Please don’t stop…</p>
+                      <div class="hero__item_icon">🔥🔥🔥</div>
+                    </div>
+                  </div>
+                  <div class="hero__sum">
+                    <h3 class="hero__item_name">VIP_king89</h3>
+                    <p class="hero__sum_text">+1 500 tokens</p>
+                  </div>
+                  <div class="hero__item">
+                    <h3 class="hero__item_name">GentleBoss💰</h3>
+                    <div class="hero__item_inner">
+                      <p class="hero__item_text">You're the definition of perfection</p>
+                      <div class="hero__item_icon">🔥</div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="work__bottom">
+                  <label class="translator__label">
+                    <input class="translator__input" name="input" type="text" placeholder="Your message">
+                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="34.7266" height="34.7266" rx="17.3633" fill="#E8C662" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.60949 11.2316C9.54725 10.9834 9.55754 10.7225 9.63914 10.48C9.72075 10.2375 9.87023 10.0235 10.0698 9.86347C10.2695 9.70339 10.5108 9.60397 10.7653 9.577C11.0197 9.55003 11.2765 9.59664 11.5053 9.71131L24.4169 16.1671C24.6392 16.2781 24.8262 16.4487 24.9569 16.66C25.0876 16.8713 25.1569 17.1149 25.1569 17.3633C25.1569 17.6118 25.0876 17.8553 24.9569 18.0666C24.8262 18.2779 24.6392 18.4486 24.4169 18.5595L11.5053 25.0153C11.2765 25.13 11.0197 25.1766 10.7653 25.1496C10.5108 25.1227 10.2695 25.0233 10.0698 24.8632C9.87023 24.7031 9.72075 24.4891 9.63914 24.2466C9.55754 24.0041 9.54725 23.7433 9.60949 23.4951L10.9615 18.0883L18.8129 17.3633L10.9615 16.6384L9.60949 11.2316Z" fill="white" />
+                    </svg>
+                  </label>
+                  <div class="work__tokens">
+                    <img src="images/content/message9.webp" alt="img" width="148" height="34" loading="lazy">
+                  </div>
+                </div>
+              </div>
+              <div class="work__bg _ibg">
+                <picture>
+                  <source media="(max-width: 1025px)" srcset="images/content/work-photo-t.webp">
+                  <img src="images/content/work-photo.webp" alt="img" width="710" height="500" loading="lazy">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info info--right">
+        <div class="info__content _container">
+          <div class="info__body info__body--mod">
+            <h2 class="subtitle">Работай только в платных вебкам чатах!</h2>
+            <p class="text">Вы можете включить режим работы только в платном чате, занимаясь своими делами, включаясь в процесс только тогда, когда посетитель уже платит за общение.</p>
+            <a class="button button-filled" href="registration.html">Начать зарабатывать</a>
+          </div>
+        </div>
+        <div class="info__bg _ibg">
+          <picture>
+            <source media="(max-width: 770px)" srcset="images/content/start1-m.webp">
+            <source media="(max-width: 1025px)" srcset="images/content/start1-t.webp">
+            <img src="images/content/start1.webp" alt="img" width="1920" height="1000" loading="lazy">
+          </picture>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="work__content _container">
+          <div class="work__body">
+            <div class="work__col">
+              <svg width="128" height="80" viewBox="0 0 128 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_454_488)">
+                  <path d="M42.9539 51.9179H102.698V58.7712H42.9539V51.9179ZM32.7 19.5625H5.56641C4.07812 19.5625 2.68125 20.1557 1.63125 21.2314C0.590134 22.3036 0.00394015 23.7533 0 25.2657V72.6244C0 74.1252 0.592969 75.5972 1.63125 76.6562C2.68359 77.7368 4.08047 78.3299 5.56875 78.3299H32.7C34.1859 78.3299 35.5852 77.7368 36.6352 76.6586C37.6769 75.5869 38.2632 74.1369 38.2664 72.6244V25.2657C38.2664 23.7648 37.6734 22.2928 36.6352 21.2338C36.12 20.7021 35.5068 20.2805 34.8313 19.9936C34.1557 19.7066 33.4313 19.5601 32.7 19.5625ZM21.5203 73.352H16.7484C16.1268 73.352 15.5307 73.099 15.0912 72.6487C14.6516 72.1983 14.4047 71.5876 14.4047 70.9507C14.4047 70.3138 14.6516 69.703 15.0912 69.2527C15.5307 68.8024 16.1268 68.5494 16.7484 68.5494H21.5203C22.1419 68.5494 22.7381 68.8024 23.1776 69.2527C23.6171 69.703 23.8641 70.3138 23.8641 70.9507C23.8641 71.5876 23.6171 72.1983 23.1776 72.6487C22.7381 73.099 22.1419 73.352 21.5203 73.352Z" fill="url(#paint0_linear_454_488)" />
+                  <path d="M114.631 34.3172V8.2149C114.629 6.03718 113.784 3.94916 112.281 2.40904C110.778 0.868934 108.741 0.00254324 106.615 0H31.8799C29.7544 0.00254324 27.7166 0.868934 26.2139 2.40904C24.7111 3.94916 23.8661 6.03718 23.8643 8.2149V14.7585H32.7002C35.44 14.7585 38.0182 15.8511 39.9518 17.8346C40.907 18.8079 41.6642 19.9658 42.1796 21.2412C42.695 22.5165 42.9582 23.8839 42.9541 25.2642V47.1114H102.699V41.0025C102.699 39.2399 103.397 37.5158 104.613 36.2743C105.838 35.025 107.495 34.3216 109.224 34.3172H114.631Z" fill="url(#paint1_linear_454_488)" />
+                  <path d="M126.026 39.6758C125.68 39.3225 125.213 39.1231 124.725 39.1211H109.223C108.982 39.1208 108.743 39.1693 108.52 39.2638C108.297 39.3583 108.094 39.4969 107.923 39.6718C107.753 39.8467 107.617 40.0543 107.525 40.2829C107.433 40.5115 107.386 40.7564 107.386 41.0037V68.5492H126.562V41.0061C126.562 40.5074 126.369 40.029 126.026 39.6758ZM107.386 76.4447C107.385 76.6923 107.432 76.9377 107.524 77.1667C107.616 77.3957 107.751 77.6037 107.922 77.7789C108.093 77.9541 108.296 78.093 108.519 78.1875C108.742 78.2821 108.982 78.3304 109.223 78.3298H124.725C124.967 78.3301 125.206 78.2815 125.429 78.1869C125.652 78.0922 125.855 77.9534 126.026 77.7782C126.197 77.6031 126.332 77.3951 126.424 77.1663C126.516 76.9375 126.563 76.6923 126.562 76.4447V73.3518H107.386V76.4447ZM89.3555 73.5295H82.0477L79.9641 63.5737H58.5281L56.4445 73.5295H49.1367C48.5151 73.5295 47.919 73.7825 47.4794 74.2329C47.0399 74.6832 46.793 75.294 46.793 75.9309C46.793 76.5677 47.0399 77.1785 47.4794 77.6288C47.919 78.0792 48.5151 78.3322 49.1367 78.3322H89.3531C89.9747 78.3325 90.571 78.0798 91.0107 77.6297C91.4505 77.1796 91.6977 76.5689 91.698 75.9321C91.6984 75.2952 91.4517 74.6843 91.0124 74.2337C90.5731 73.7832 89.9771 73.5299 89.3555 73.5295Z" fill="url(#paint2_linear_454_488)" />
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear_454_488" x1="2.4551e-09" y1="63.5961" x2="102.942" y2="62.752" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#B38D2A" />
+                    <stop offset="0.3125" stop-color="#F7EF8A" />
+                    <stop offset="0.625" stop-color="#D0AA45" />
+                    <stop offset="1" stop-color="#E8C662" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_454_488" x1="23.8643" y1="35.2999" x2="114.844" y2="34.4774" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#B38D2A" />
+                    <stop offset="0.3125" stop-color="#F7EF8A" />
+                    <stop offset="0.625" stop-color="#D0AA45" />
+                    <stop offset="1" stop-color="#E8C662" />
+                  </linearGradient>
+                  <linearGradient id="paint2_linear_454_488" x1="46.793" y1="68.5014" x2="126.75" y2="67.7382" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#B38D2A" />
+                    <stop offset="0.3125" stop-color="#F7EF8A" />
+                    <stop offset="0.625" stop-color="#D0AA45" />
+                    <stop offset="1" stop-color="#E8C662" />
+                  </linearGradient>
+                  <clipPath id="clip0_454_488">
+                    <rect width="128" height="80" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h2 class="subtitle">Работай со смартфона, планшета или ноутбука!</h2>
+              <p class="text">Работа веб-моделью доступна с любого устройства, главное - доступ к интернету.</p>
+            </div>
+            <div class="work__col">
+              <div class="work__image">
+                <img src="images/content/work-photo1.webp" alt="img" width="820" height="500" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="info info--height">
+        <div class="info__content _container">
+          <div class="info__body">
+            <h2 class="subtitle">В чем заключается работа?</h2>
+            <div class="info__text-filled">
+              <p>Работа, которая дарит свободу и доход</p>
+            </div>
+            <p class="text">Вебкам-модель — это девушка, которая общается с онлайн-аудиторией в видеочате. Ваша задача — быть собой, флиртовать, привлекать внимание и выстраивать контакт. Это не интим на заказ — это искусство общения, харизмы и образа.</p>
+            <h3 class="info__title">Что делает модель:</h3>
+            <div class="info__cards">
+              <div class="card">
+                <div class="card__img">
+                  <img src="images/content/info-item-img1.webp" alt="img" width="160" height="120" loading="lazy">
+                </div>
+                <p class="card__text">Ведёт прямые трансляции в приватных и публичных чатах</p>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="images/content/info-item-img2.webp" alt="img" width="160" height="120" loading="lazy">
+                </div>
+                <p class="card__text">Получает чаевые и подарки от зрителей</p>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="images/content/info-item-img3.webp" alt="img" width="160" height="120" loading="lazy">
+                </div>
+                <p class="card__text">Продаёт фото и видео</p>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="images/content/info-item-img4.webp" alt="img" width="160" height="120" loading="lazy">
+                </div>
+                <p class="card__text">Отвечает на личные сообщения</p>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="images/content/info-item-img5.webp" alt="img" width="160" height="120" loading="lazy">
+                </div>
+                <p class="card__text">Участвует в конкурсах и получает бонусы</p>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="images/content/info-item-img6.webp" alt="img" width="160" height="120" loading="lazy">
+                </div>
+                <p class="card__text">Когда есть настроение, запускает трансляцию вне дома, на смартфоне</p>
+              </div>
+            </div>
+            <div class="info__text-filled info__text-filled--mod">
+              <p>Всё это — в комфортных условиях: из дома, по вашему графику, без начальников и с полным контролем над заработком.</p>
+            </div>
+          </div>
+        </div>
+        <div class="info__bg _ibg">
+          <picture>
+            <img src="images/content/start2.webp" alt="img" width="1920" height="1000" loading="lazy">
+          </picture>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="work__content _container">
+          <div class="work__body work__body--mod">
+            <div class="work__col">
+              <div class="work__inner">
+                <h2 class="subtitle">На чем строится заработок?</h2>
+                <div class="info__text-filled">
+                  <p>Каждая минута — деньги</p>
+                </div>
+                <p class="text">Ваша прибыль зависит от активности в чате и уровня вовлечённости зрителей. Чем интереснее вы, тем больше доход.</p>
+              </div>
+              <p class="work__text">Всё, что вы делаете — оценивается и поощряется. Здесь зарабатывают не только за внешность, а за обаяние, креатив и умение удержать внимание.</p>
+            </div>
+            <div class="work__col">
+              <h3 class="info__title">Основные источники дохода:</h3>
+              <div class="work__cards">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="images/icons/work-card-icon1.svg" alt="img" width="160" height="120" loading="lazy">
+                  </div>
+                  <div class="card__wrap">
+                    <h3 class="card__title">Приватные чаты</h3>
+                    <p class="card__text">от $0.6 до $3 за минуту индивидуального общения</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img src="images/icons/work-card-icon2.svg" alt="img" width="160" height="120" loading="lazy">
+                  </div>
+                  <div class="card__wrap">
+                    <h3 class="card__title">Платные трансляции</h3>
+                    <p class="card__text">от $0.2 за каждого зрителя в минуту</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img src="images/icons/work-card-icon3.svg" alt="img" width="160" height="120" loading="lazy">
+                  </div>
+                  <div class="card__wrap">
+                    <h3 class="card__title">Чаевые и подарки</h3>
+                    <p class="card__text">от $0.1 до $50 за внимание и обаяние</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img src="images/icons/work-card-icon4.svg" alt="img" width="160" height="120" loading="lazy">
+                  </div>
+                  <div class="card__wrap">
+                    <h3 class="card__title">Интерактивные игры с пользователями</h3>
+                    <p class="card__text">с платным действием</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img src="images/icons/work-card-icon5.svg" alt="img" width="160" height="120" loading="lazy">
+                  </div>
+                  <div class="card__wrap">
+                    <h3 class="card__title">Платное управление интерактивной игрушкой</h3>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img src="images/icons/work-card-icon6.svg" alt="img" width="160" height="120" loading="lazy">
+                  </div>
+                  <div class="card__wrap">
+                    <h3 class="card__title">Продажа контента</h3>
+                    <p class="card__text">фотосеты и видео от $2.5 за файл</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img src="images/icons/work-card-icon7.svg" alt="img" width="160" height="120" loading="lazy">
+                  </div>
+                  <div class="card__wrap">
+                    <h3 class="card__title">Платные сообщения</h3>
+                    <p class="card__text">ответ за донат</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img src="images/icons/work-card-icon8.svg" alt="img" width="160" height="120" loading="lazy">
+                  </div>
+                  <div class="card__wrap">
+                    <h3 class="card__title">Еженедельные конкурсы</h3>
+                    <p class="card__text">бонусы до $5000 за популярность и активность</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info info--height">
+        <div class="info__content _container">
+          <div class="info__body">
+            <h2 class="subtitle">Дополнительные бонусы для наших моделей</h2>
+            <p class="text text--color">Зарабатывай больше — получай подарки, бонусы и поддержку от нашей команды</p>
+            <div class="info__cards info__cards--mod">
+              <div class="card">
+                <div class="card__img">
+                  <img src="images/icons/work-card-icon9.svg" alt="img" width="160" height="120" loading="lazy">
+                </div>
+                <div class="card__wrap">
+                  <h3 class="card__title">Бонус $5 новым моделям</h3>
+                  <p class="card__text">Первые деньги — сразу после первого заработка $30</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="images/icons/work-card-icon10.svg" alt="img" width="160" height="120" loading="lazy">
+                </div>
+                <div class="card__wrap">
+                  <h3 class="card__title">Ежемесячные конкурсы</h3>
+                  <p class="card__text">Призы, техника для стрима, Telegram Premium и денежные награды</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="images/icons/work-card-icon11.svg" alt="img" width="160" height="120" loading="lazy">
+                </div>
+                <div class="card__wrap">
+                  <h3 class="card__title">Партнёрская программа</h3>
+                  <p class="card__text">Приводи подругу и получай 30% с её дохода</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="images/icons/work-card-icon12.svg" alt="img" width="160" height="120" loading="lazy">
+                </div>
+                <div class="card__wrap">
+                  <h3 class="card__title">Помощь с первым заработком</h3>
+                  <p class="card__text">Наш менеджер подскажет и поможет заработать первые токены в переписке</p>
+                </div>
+              </div>
+            </div>
+            <div class="info__text-filled info__text-filled--mod">
+              <svg width="64" height="60" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_507_315)">
+                  <path d="M36.9783 4.11249C34.2459 4.95255 32.0066 6.58987 30.3228 8.97898C28.7085 11.2694 27.9393 13.7911 27.575 15.5648C26.2797 14.3012 24.2302 12.6463 21.6107 11.6575C18.8784 10.6262 16.1075 10.5292 13.3751 11.3693C5.75012 13.7136 1.91466 21.7276 4.45368 30.0106C7.19671 38.959 16.2471 42.8759 29.9483 48.8055C32.2749 49.8125 34.9122 50.954 37.6681 52.1888C38.0315 52.3519 38.4417 52.3771 38.8233 52.2597C39.2049 52.1424 39.5303 51.8911 39.7397 51.552C41.3292 48.9808 42.8726 46.5542 44.2352 44.4119C52.2532 31.8059 57.5501 23.4779 54.8071 14.5294C52.2681 6.24645 44.6033 1.76819 36.9783 4.11249Z" fill="#F7EF8A" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_507_315">
+                    <rect width="64" height="60" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="info__box">
+                <h4 class="info__box_title">Ты работаешь — а мы поддерживаем. </h4>
+                <p class="info__box_text">Мы регулярно поощряем активных моделей подарками и бонусами — просто за то, что ты с нами!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info__bg _ibg">
+          <img src="images/content/bonuses.webp" alt="img" width="1920" height="1000" loading="lazy">
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="work__content _container">
+          <div class="work__body work__body--mod">
+            <div class="work__col">
+              <div class="work__inner">
+                <h2 class="subtitle">Работа под тебя — без давления и строгости</h2>
+                <p class="text">Выбирай сама, как и с кем работать. У нас нет обязательных требований — только удобство и комфорт.</p>
+              </div>
+              <p class="work__text">Только ты решаешь, как работать. Мы лишь показываем, как можно зарабатывать больше, оставаясь собой.</p>
+            </div>
+            <div class="work__col">
+              <div class="work__cards work__cards--mod">
+                <div class="card">
+                  <span class="card__num">01</span>
+                  <h3 class="card__title">Можно работать <br> даже без эротического шоу</h3>
+                  <p class="card__text">Только переписка и общение — это уже приносит доход. Мы это гарантируем! На нашем обучении демонстрируем реальность заработка, прямо на ваш кошелек.</p>
+                </div>
+                <div class="card">
+                  <span class="card__num">02</span>
+                  <h3 class="card__title">Формат флирта <br> или платный чат</h3>
+                  <p class="card__text">Хочешь — просто общаешься. Хочешь — работаешь только в платном чате, без траты времени на бесплатные разговоры</p>
+                </div>
+                <div class="card">
+                  <span class="card__num">03</span>
+                  <h3 class="card__title">Сайты <br> на выбор</h3>
+                  <p class="card__text">Подбираем площадки под твой стиль: без общения голосом, с перепиской, с видео или даже без камеры</p>
+                </div>
+                <div class="card">
+                  <span class="card__num">04</span>
+                  <h3 class="card__title">Поддержка <br> для скромных девушек</h3>
+                  <p class="card__text">Мы обучаем, как зарабатывать, не выходя из зоны комфорта — можно даже без эротики</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="materials">
+        <div class="materials__content _container">
+          <h2 class="subtitle">Полезные материалы для веб моделей</h2>
+          <div class="materials__body">
+            <article class="post-card">
+              <a class="post-card__link" href="article.html" aria-label="Подробнее">
+                <figure class="post-card__image">
+                  <img src="images/content/post-card-img1.webp" alt="Веб-модель" width="486" height="260" loading="lazy">
+                </figure>
+                <div class="post-card__content">
+                  <div class="post-card__row">
+                    <h2 class="post-card__title">КАК НАЧАТЬ КАРЬЕРУ ВЕБ-МОДЕЛИ: ПЕРВЫЕ ШАГИ</h2>
+                    <p class="post-card__text">Узнайте, с чего начать работу в сфере веб-моделинга, какие инструменты и платформы понадобятся для успешного старта.</p>
+                  </div>
+                  <div class="post-card__row">
+                    <ul class="post-card__tags">
+                      <li>#начало</li>
+                      <li>#карьера</li>
+                      <li>#вебмодели</li>
+                    </ul>
+                    <time class="post-card__date" datetime="2025-07-15">15 июля 2025</time>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="post-card">
+              <a class="post-card__link" href="article.html" aria-label="Подробнее">
+                <figure class="post-card__image">
+                  <img src="images/content/post-card-img2.webp" alt="Веб-модель" width="486" height="260" loading="lazy">
+                </figure>
+                <div class="post-card__content">
+                  <div class="post-card__row">
+                    <h2 class="post-card__title">Лучшие техники общения с аудиторией онлайн</h2>
+                    <p class="post-card__text">Эффективные способы поддерживать интерес и доверие зрителей, чтобы увеличить количество постоянных подписчиков.</p>
+                  </div>
+                  <div class="post-card__row">
+                    <ul class="post-card__tags">
+                      <li>#коммуникация</li>
+                      <li>#аудитория</li>
+                      <li>#советы</li>
+                    </ul>
+                    <time class="post-card__date" datetime="2025-07-15">3 июля 2025</time>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="post-card">
+              <a class="post-card__link" href="article.html" aria-label="Подробнее">
+                <figure class="post-card__image">
+                  <img src="images/content/post-card-img3.webp" alt="Веб-модель" width="486" height="260" loading="lazy">
+                </figure>
+                <div class="post-card__content">
+                  <div class="post-card__row">
+                    <h2 class="post-card__title">Как обеспечить конфиденциальность в работе веб-модели</h2>
+                    <p class="post-card__text">Практические рекомендации по защите личных данных и соблюдению анонимности во время трансляций.</p>
+                  </div>
+                  <div class="post-card__row">
+                    <ul class="post-card__tags">
+                      <li>#безопасность</li>
+                      <li>#конфиденциальность</li>
+                      <li>#советы</li>
+                    </ul>
+                    <time class="post-card__date" datetime="2025-07-15">28 июня 2025</time>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="post-card">
+              <a class="post-card__link" href="article.html" aria-label="Подробнее">
+                <figure class="post-card__image">
+                  <img src="images/content/post-card-img4.webp" alt="Веб-модель" width="486" height="260" loading="lazy">
+                </figure>
+                <div class="post-card__content">
+                  <div class="post-card__row">
+                    <h2 class="post-card__title">Топ-5 приложений для повышения продуктивности веб-моделей</h2>
+                    <p class="post-card__text">Обзор полезных приложений и сервисов, которые помогут эффективно планировать рабочее время и улучшать качество трансляций.</p>
+                  </div>
+                  <div class="post-card__row">
+                    <ul class="post-card__tags">
+                      <li>#приложения</li>
+                      <li>#продуктивность</li>
+                      <li>#инструменты</li>
+                    </ul>
+                    <time class="post-card__date" datetime="2025-07-15">10 июня 2025</time>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="post-card">
+              <a class="post-card__link" href="article.html" aria-label="Подробнее">
+                <figure class="post-card__image">
+                  <img src="images/content/post-card-img5.webp" alt="Веб-модель" width="486" height="260" loading="lazy">
+                </figure>
+                <div class="post-card__content">
+                  <div class="post-card__row">
+                    <h2 class="post-card__title">Правильный уход за внешностью для веб-моделей</h2>
+                    <p class="post-card__text">Советы по уходу за кожей и волосами, чтобы всегда выглядеть свежо и привлекательно на камеру.</p>
+                  </div>
+                  <div class="post-card__row">
+                    <ul class="post-card__tags">
+                      <li>#уход</li>
+                      <li>#внешность</li>
+                      <li>#красота</li>
+                    </ul>
+                    <time class="post-card__date" datetime="2025-07-15">5 июня 2025</time>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="post-card">
+              <a class="post-card__link" href="article.html" aria-label="Подробнее">
+                <figure class="post-card__image">
+                  <img src="images/content/post-card-img6.webp" alt="Веб-модель" width="486" height="260" loading="lazy">
+                </figure>
+                <div class="post-card__content">
+                  <div class="post-card__row">
+                    <h2 class="post-card__title">Как выбрать идеальное оборудование для стримов</h2>
+                    <p class="post-card__text">Рекомендации по выбору камеры, микрофона и освещения для создания профессионального образа в сети.</p>
+                  </div>
+                  <div class="post-card__row">
+                    <ul class="post-card__tags">
+                      <li>#оборудование</li>
+                      <li>#стримы</li>
+                      <li>#техника</li>
+                    </ul>
+                    <time class="post-card__date" datetime="2025-07-15">27 мая 2025</time>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-form">
+        <div class="section-form__content _container">
+          <div class="section-form__body">
+            <div class="section-form__col">
+              <form class="form" action="send.php" method="POST" enctype="multipart/form-data" aria-label="Контактная форма" novalidate>
+                <h2 class="form__title">Напишите нам, и мы ответим в течении 5 минут!</h2>
+                <label class="form__item">
+                  <input class="form__input _req" placeholder="Имя" id="formName" type="text" name="name" aria-required="true" aria-describedby="name-error" aria-invalid="false">
+                  <span id="name-error" class="form__error" aria-live="polite" role="alert">Заполните поле</span>
+                </label>
+                <label class="form__item">
+                  <input class="form__input _req _number" placeholder="Ваши контакты" id="formNumber" type="tel" name="number" aria-required="true" aria-describedby="number-error" aria-invalid="false">
+                  <span id="number-error" class="form__error" aria-live="polite" role="alert">Заполните поле</span>
+                </label>
+                <label class="form__item">
+                  <textarea class="form__textarea" name="message" placeholder="Сообщение"></textarea>
+                </label>
+                <button class="form__button" type="submit">Отправить</button>
+                <div class="form__item">
+                  <div class="checkbox">
+                    <input class="checkbox__input _req" id="formAgreement" type="checkbox" name="agreement" checked aria-required="true">
+                    <label class="checkbox__label" for="formAgreement">
+                      <span class="checkbox__text">Нажимая кнопку Отправить, вы соглашаетесь с <a href="policy.html">политикой конфиденциальности</a></span>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="section-form__col">
+              <div class="section-form__image">
+                <img src="images/content/section-form-img.webp" alt="img" width="775" height="600" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content _container">
+        <div class="footer__body">
+          <div class="footer__block">
+            <a class="footer__logo" href="index.html">
+              <img src="images/icons/logo.svg" alt="logo" width="142" height="43">
+            </a>
+            <div class="footer__texts">
+              <p class="footer__text">Все права защищены.</p>
+              <p class="footer__text">При поддержке CamWork.Club © 2006-2025</p>
+            </div>
+            <div class="footer__links">
+              <a class="footer__link" href="#!">Политика конфиденциальности</a>
+              <a class="footer__link" href="#!">Пользовательское соглашение</a>
+            </div>
+            <div class="social-networks">
+              <a class="social-networks__telegram" href="http://t.me/camwork" aria-label="Наш Telegram канал">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.84765 12.6508L7.51682 17.3042C7.99015 17.3042 8.19515 17.1008 8.44098 16.8567L10.6602 14.7358L15.2585 18.1033C16.1018 18.5733 16.696 18.3258 16.9235 17.3275L19.9418 3.18416L19.9427 3.18333C20.2102 1.93666 19.4918 1.44916 18.6702 1.75499L0.928482 8.54749C-0.282352 9.01749 -0.264019 9.69249 0.722648 9.99833L5.25848 11.4092L15.7943 4.81666C16.2901 4.48833 16.741 4.66999 16.3701 4.99833L7.84765 12.6508Z" fill="white" />
+                </svg>
+              </a>
+              <a class="social-networks__youtube" href="https://www.youtube.com/c/camworkclub" aria-label="Наш youtube канал">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3001_3727)">
+                    <path d="M19.5577 4.9408L19.5827 5.10414C19.4687 4.6885 19.2507 4.30878 18.9491 4.00084C18.6476 3.69289 18.2726 3.46688 17.8594 3.34414L17.8419 3.33997C16.2827 2.91664 10.0086 2.91664 10.0086 2.91664C10.0086 2.91664 3.75025 2.9083 2.17525 3.33997C1.76139 3.45974 1.38486 3.68295 1.08116 3.98854C0.777465 4.29414 0.556606 4.67205 0.439412 5.08664L0.435245 5.10414C-0.147255 8.14664 -0.151422 11.8025 0.461079 15.06L0.435245 14.895C0.54926 15.3106 0.767328 15.6903 1.06886 15.9983C1.37039 16.3062 1.74543 16.5322 2.15858 16.655L2.17608 16.6591C3.73358 17.0833 10.0094 17.0833 10.0094 17.0833C10.0094 17.0833 16.2669 17.0833 17.8427 16.6591C18.2568 16.5396 18.6335 16.3164 18.9374 16.0108C19.2413 15.7052 19.4622 15.3272 19.5794 14.9125L19.5836 14.895C19.8486 13.48 20.0002 11.8516 20.0002 10.1883L19.9994 10.0041L20.0002 9.81247C20.0002 8.1483 19.8486 6.51997 19.5577 4.9408ZM8.00691 13.0425V6.96497L13.2286 10.0083L8.00691 13.0425Z" fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath>
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a class="social-networks__ok"  href="https://ok.ru/camwork" aria-label="Наша группа в однокласниках">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3001_3738)">
+                    <path d="M3.93415 10.7341C3.42331 11.7383 4.00331 12.2183 5.32665 13.0383C6.45165 13.7333 8.00581 13.9875 9.00415 14.0891L5.06998 17.8733C3.92498 18.9708 5.76831 20.7316 6.91248 19.6575L10.01 16.67C11.1958 17.8108 12.3325 18.9041 13.1075 19.6616C14.2525 20.74 16.095 18.9941 14.9625 17.8775C14.8775 17.7966 10.765 13.8516 11.0158 14.0933C12.0266 13.9916 13.5575 13.7225 14.6691 13.0425L14.6683 13.0416C15.9916 12.2175 16.5716 11.7383 16.0683 10.7341C15.7641 10.1641 14.9441 9.68747 13.8525 10.5116C13.8525 10.5116 12.3783 11.6408 10.0008 11.6408C7.62248 11.6408 6.14915 10.5116 6.14915 10.5116C5.05831 9.6833 4.23498 10.1641 3.93415 10.7341Z" fill="white" />
+                    <path d="M10.0002 10.1183C12.8985 10.1183 15.2652 7.85333 15.2652 5.065C15.2652 2.265 12.8985 0 10.0002 0C7.10104 0 4.73438 2.265 4.73438 5.065C4.73438 7.85333 7.10104 10.1183 10.0002 10.1183ZM10.0002 2.56583C11.4244 2.56583 12.586 3.68333 12.586 5.065C12.586 6.435 11.4244 7.5525 10.0002 7.5525C8.57604 7.5525 7.41438 6.435 7.41438 5.065C7.41354 3.6825 8.57521 2.56583 10.0002 2.56583Z" fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath>
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a class="social-networks__wiki" href="https://wiki.camwork.club" aria-label="Наша группа на wiki">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9945 3.56249L15.9998 3.55107C15.999 3.6961 15.9986 3.86989 15.9963 3.98371C16.3357 3.99166 17.2043 4.15138 17.4766 4.86632L13.6502 13.6981C13.4627 13.2598 11.6832 9.30691 11.4801 8.7986L13.3305 4.96015C13.7126 4.37616 14.4432 3.99962 15.1496 3.97229L15.1476 3.57086L11.3044 3.56739C11.2953 3.66917 11.3046 3.88315 11.2906 3.98942C12.3747 4.01879 12.7623 4.26153 12.5024 4.90895C12.0736 5.88315 11.1745 7.72874 10.9987 8.0655C10.4488 6.91609 10.0991 6.03144 9.50046 4.78881C9.24222 4.21298 9.81234 3.98881 10.4153 3.97208V3.568L5.96451 3.55434C5.96777 3.74403 5.96022 3.85031 5.96022 3.98901C6.58052 3.99839 7.38562 4.06469 7.70668 4.60482C8.13238 5.43358 9.55145 8.72394 9.98083 9.60513C9.43315 10.6562 8.1028 13.1423 7.62611 14.0749C6.94319 12.5593 4.41713 6.59115 3.70321 5.05071C3.43723 4.39432 4.46446 4.01512 5.05885 3.98738L5.06272 3.54924L0 3.54883C0.00101989 3.6806 0.00550739 3.89763 0.00591535 3.99493C0.826925 3.98738 2.02692 5.33567 2.36961 6.17402C3.84722 9.60309 5.37195 13.0122 6.84243 16.4441C6.84283 16.45 7.3026 16.4561 7.3077 16.4457C8.26986 14.4767 9.39419 12.4076 10.4094 10.4161L12.9705 16.4488C12.9715 16.4496 13.3952 16.452 13.3974 16.4502C15.0215 12.7386 17.455 7.04317 18.2509 5.24511C18.5748 4.47672 19.1168 4.00819 19.9935 3.98167L20 3.58269L19.9945 3.56249Z" fill="white" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Контакты</h3>
+            <ul class="footer__messengers">
+              <li>
+                
+                <a href="viber://pa?chatURI=camwork">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_466_340)">
+                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#775CAC" />
+                      <path d="M13.2633 5.68359H10.737C9.56444 5.68359 8.43992 6.14938 7.61082 6.97849C6.78171 7.8076 6.31592 8.93211 6.31592 10.1046V11.9994C6.31557 12.8363 6.55279 13.6562 7 14.3636C7.44722 15.071 8.08605 15.637 8.84223 15.9957V18.1068C8.84299 18.1479 8.85575 18.188 8.87894 18.222C8.90214 18.2561 8.93477 18.2826 8.97283 18.2984C9.01089 18.3141 9.05272 18.3184 9.09319 18.3108C9.13366 18.3031 9.17101 18.2838 9.20066 18.2552L11.0354 16.4204H13.2633C14.4358 16.4204 15.5603 15.9546 16.3894 15.1255C17.2186 14.2964 17.6843 13.1719 17.6843 11.9994V10.1046C17.6843 8.93211 17.2186 7.8076 16.3894 6.97849C15.5603 6.14938 14.4358 5.68359 13.2633 5.68359ZM14.918 13.9699L14.2864 14.6015C13.6138 15.2599 11.858 14.5083 10.3107 12.9278C8.76329 11.3473 8.08434 9.57412 8.73171 8.9157L9.36329 8.28412C9.48707 8.17301 9.64801 8.11234 9.81434 8.11409C9.98067 8.11585 10.1403 8.17989 10.2617 8.29359L11.1838 9.24096C11.257 9.31653 11.3099 9.40949 11.3373 9.51109C11.3647 9.61269 11.3658 9.7196 11.3406 9.82175C11.3153 9.92391 11.2645 10.018 11.1929 10.0951C11.1212 10.1722 11.0312 10.2298 10.9312 10.2625C10.7829 10.308 10.6579 10.4089 10.582 10.5441C10.5062 10.6794 10.4853 10.8386 10.5238 10.9889C10.6817 11.6899 11.5722 12.5678 12.2354 12.7399C12.3849 12.7755 12.5423 12.7554 12.678 12.6833C12.8137 12.6113 12.9185 12.4921 12.9728 12.3483C13.0078 12.248 13.068 12.1584 13.1477 12.0882C13.2274 12.0179 13.3238 11.9693 13.4277 11.9471C13.5316 11.9249 13.6395 11.9298 13.7409 11.9614C13.8424 11.9929 13.934 12.0501 14.007 12.1273L14.9275 13.0746C15.0381 13.1981 15.0984 13.3584 15.0966 13.5241C15.0949 13.6898 15.0312 13.8488 14.918 13.9699ZM12.5749 8.68359C12.5121 8.68329 12.4493 8.68699 12.387 8.69465C12.3315 8.70072 12.2759 8.6845 12.2323 8.64956C12.1888 8.61462 12.1609 8.56382 12.1549 8.50833C12.1488 8.45284 12.165 8.39722 12.2 8.35369C12.2349 8.31016 12.2857 8.2823 12.3412 8.27622C12.4188 8.26729 12.4968 8.26308 12.5749 8.26359C13.1336 8.26317 13.6697 8.48464 14.0653 8.87931C14.4608 9.27398 14.6835 9.80956 14.6843 10.3683C14.6849 10.4464 14.6806 10.5244 14.6717 10.602C14.6687 10.6295 14.6603 10.6561 14.647 10.6803C14.6337 10.7046 14.6158 10.7259 14.5942 10.7432C14.5727 10.7605 14.5479 10.7734 14.5214 10.7812C14.4949 10.7889 14.4671 10.7913 14.4396 10.7883C14.4121 10.7853 14.3855 10.7769 14.3613 10.7636C14.3371 10.7504 14.3157 10.7324 14.2984 10.7109C14.2811 10.6893 14.2682 10.6646 14.2605 10.638C14.2527 10.6115 14.2503 10.5837 14.2533 10.5562C14.2602 10.4938 14.2639 10.4311 14.2643 10.3683C14.2635 9.92095 14.0851 9.4922 13.7683 9.17629C13.4515 8.86039 13.0223 8.68317 12.5749 8.68359ZM13.838 10.3683C13.8335 10.4211 13.8093 10.4702 13.7702 10.506C13.7312 10.5418 13.6802 10.5616 13.6272 10.5616C13.5743 10.5616 13.5233 10.5418 13.4842 10.506C13.4452 10.4702 13.421 10.4211 13.4164 10.3683C13.4164 10.1451 13.3278 9.93107 13.17 9.77324C13.0121 9.61542 12.7981 9.52675 12.5749 9.52675C12.5457 9.52928 12.5162 9.52571 12.4885 9.51627C12.4607 9.50682 12.4352 9.49171 12.4136 9.47189C12.392 9.45207 12.3747 9.42798 12.3629 9.40113C12.3511 9.37429 12.345 9.34529 12.345 9.31596C12.345 9.28664 12.3511 9.25763 12.3629 9.23079C12.3747 9.20395 12.392 9.17985 12.4136 9.16003C12.4352 9.14021 12.4607 9.1251 12.4885 9.11565C12.5162 9.10621 12.5457 9.10264 12.5749 9.10517C12.9099 9.10517 13.2312 9.23825 13.4681 9.47514C13.7049 9.71203 13.838 10.0333 13.838 10.3683ZM15.4438 11.052C15.4391 11.0807 15.4286 11.1082 15.4129 11.1326C15.3971 11.1571 15.3765 11.178 15.3523 11.1941C15.3281 11.2102 15.3008 11.2212 15.2722 11.2263C15.2436 11.2314 15.2142 11.2306 15.1859 11.2238C15.1576 11.2171 15.131 11.2046 15.1078 11.1871C15.0845 11.1696 15.0652 11.1475 15.0508 11.1222C15.0365 11.0969 15.0276 11.0689 15.0245 11.04C15.0215 11.0111 15.0245 10.9818 15.0333 10.9541C15.0789 10.7633 15.1017 10.5677 15.1012 10.3715C15.1012 9.70147 14.835 9.05889 14.3612 8.58511C13.8875 8.11134 13.2449 7.84517 12.5749 7.84517H12.3791C12.3515 7.84725 12.3238 7.84387 12.2975 7.83523C12.2712 7.82659 12.2469 7.81286 12.226 7.79483C12.1836 7.75841 12.1575 7.70666 12.1533 7.65096C12.1491 7.59527 12.1672 7.54019 12.2036 7.49784C12.2401 7.4555 12.2918 7.42936 12.3475 7.42517C12.4233 7.41886 12.4991 7.4157 12.5749 7.4157C13.3571 7.41695 14.1069 7.72859 14.6596 8.28218C15.2123 8.83577 15.5228 9.58606 15.5228 10.3683C15.5228 10.5985 15.4964 10.8279 15.4438 11.052Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_466_340">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Support
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/camwork">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_466_364)">
+                      <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#039BE5" />
+                      <path d="M5.49077 11.7402L17.0608 7.27921C17.5978 7.08521 18.0668 7.41021 17.8928 8.22221L17.8938 8.22121L15.9238 17.5022C15.7778 18.1602 15.3868 18.3202 14.8398 18.0102L11.8398 15.7992L10.3928 17.1932C10.2328 17.3532 10.0978 17.4882 9.78777 17.4882L10.0008 14.4352L15.5608 9.41221C15.8028 9.19921 15.5068 9.07921 15.1878 9.29121L8.31677 13.6172L5.35477 12.6932C4.71177 12.4892 4.69777 12.0502 5.49077 11.7402Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  @camwork
+                </a>
+              </li>
+              <li>
+                <span class="footer__messengers_title">Написать</span>
+                <a href="mailto:support@camwork.club">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_466_369)">
+                      <path d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12Z" fill="#E8C662" />
+                      <path d="M16.6492 7.8125H6.3499C6.17465 7.81258 6.00205 7.85511 5.84707 7.93641C5.69208 8.01772 5.55938 8.13535 5.46045 8.27911L10.6096 11.9075C10.8697 12.0902 11.1805 12.1883 11.499 12.1883C11.8176 12.1883 12.1283 12.0902 12.3885 11.9075L17.5371 8.27911C17.4383 8.13557 17.3058 8.01808 17.1512 7.93679C16.9965 7.85549 16.8242 7.81284 16.6492 7.8125Z" fill="white" />
+                      <path d="M12.8345 12.5313C12.4442 12.8059 11.9777 12.9534 11.4995 12.9534C11.0213 12.9534 10.5548 12.8059 10.1645 12.5313L5.27197 9.08398V15.9015C5.27197 16.1856 5.38556 16.4582 5.58775 16.6591C5.78994 16.86 6.06416 16.9729 6.3501 16.9729H16.6494C16.9354 16.9729 17.2096 16.86 17.4118 16.6591C17.614 16.4582 17.7276 16.1856 17.7276 15.9015V9.08398L12.8345 12.5313Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  support@camwork.club
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Меню</h3>
+            <ul class="footer__list">
+              <li>
+                <a href="index.html">Главная</a>
+              </li>
+              <li>
+                <a href="reviews.html">Отзывы</a>
+              </li>
+              <li>
+                <a href="about.html">О нас</a>
+              </li>
+              <li>
+                <a href="blog.html">Статьи</a>
+              </li>
+              <li>
+                <a href="advantages.html">Преимущества</a>
+              </li>
+              <li>
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js?v=1"></script>  
+</body>
+
+</html>

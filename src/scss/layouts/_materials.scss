@@ -1,0 +1,29 @@
+/*----------------------------------materials--------------------------------*/
+.materials {
+    padding: 0px 0px 120px 0px;
+    @include mobile {
+        padding: 0px 0px 60px 0px;
+    }
+	&__content {
+        .subtitle {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+	}
+	&__body {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 30px;
+        @include tablet {
+            gap: 20px;
+        }
+        @include mobile {
+            gap: 15px;
+        }
+        @include mobile-650 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+	}
+}
+
+/*----------------------------------materials--------------------------------*/

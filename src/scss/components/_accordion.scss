@@ -1,0 +1,61 @@
+/*----------------------------------accordion--------------------------------*/
+.accordion {
+    &__block {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+        &:first-child {
+            border-top: 1px solid rgba(0, 0, 0, 0.13);
+        }
+    }
+    &__summary {
+        list-style: none;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer; 
+        padding: 20px 10px 20px 0px;
+        position: relative;
+        width: 100%;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        img {
+            transition: transform 0.3s ease;
+        }
+    }
+    &__details[open] &__summary img {
+        transform: rotate(180deg);
+        transition: all 0.3s;
+    }
+    &__title {
+        font-weight: 500;
+        @include tablet {
+            line-height: 150%;
+        }
+    }
+    &__content {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out, opacity 0.3s ease-out, margin-top 0.5s ease-out;
+        padding: 10px 0px;
+        margin-bottom: 10px;
+        opacity: 0;
+        margin-top: -30px;
+        &_body {
+            overflow: hidden;
+            min-height: 0;
+            p {
+                line-height: 155%;
+                letter-spacing: 0.01em;
+                color: var(--color-text);
+            }
+        }
+    }
+    &__details[open] + &__content {
+        grid-template-rows: 1fr;
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+/*----------------------------------accordion--------------------------------*/

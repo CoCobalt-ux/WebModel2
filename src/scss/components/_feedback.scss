@@ -1,0 +1,49 @@
+/*----------------------------------.feedback--------------------------------*/
+.feedback {
+    background-color: #383838;
+    border: 1px solid var(--color-yellow);
+    border-radius: 40px;
+    padding: 30px;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    height: 100%;
+    @include tablet {
+        gap: 20px;
+        padding: 20px;
+    }
+    @include mobile {
+        padding: 15px;
+        gap: 15px;
+        border-radius: 20px;
+    }
+    @include mobile-650 {
+       flex-wrap: wrap;
+    }
+	&__photo {
+        flex: none;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        @include tablet {
+            width: 105px;
+        }
+        @include mobile {
+            width: 80px;
+        }
+        @include mobile-650 {
+            height: 80px;
+            img {
+                border-radius: 13px;
+            }
+        }
+	}
+	&__text {
+        @include fluid-text(12, 20);
+        line-height: 130%;
+	}
+}
+
+/*----------------------------------.feedback--------------------------------*/

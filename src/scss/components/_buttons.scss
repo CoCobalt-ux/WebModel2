@@ -1,0 +1,112 @@
+/*----------------------------------buttons--------------------------------*/
+.button {
+    display: inline-block;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto;
+    text-align: center;
+    @include fluid-text(12, 19);
+    font-weight: 600;
+}
+.button-outline {
+  position: relative;
+  padding: 10px 25px;
+  border-radius: 100px;
+  @include fluid-text(9, 14);
+  background: linear-gradient(63deg, #b38d2a 0%, #f7ef8a 31.25%, #d0aa45 62.5%, #e8c662 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    -webkit-text-fill-color 0.3s ease;
+    @include tablet {
+      padding: 10px 20px;
+    }
+    @include mobile-650 {
+      padding: 7px 12px;
+    }
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(63deg, #b38d2a 0%, #f7ef8a 31.25%, #d0aa45 62.5%, #e8c662 100%);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    z-index: -1;
+    transition: background 0.3s ease;
+  }
+  &:hover {
+    background: linear-gradient(63deg, #b38d2a 0%, #f7ef8a 31.25%, #d0aa45 62.5%, #e8c662 100%);
+    -webkit-text-fill-color: #000;
+    color: #000;
+  }
+  &.button-outline--mod {
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: #fff;
+    color: #fff;
+    &::before {
+      background: linear-gradient(#fff, #fff);
+    }
+    &:hover {
+      background: linear-gradient(#fff, #fff);
+      -webkit-text-fill-color: #000;
+      color: #000;
+    }
+  }
+}
+.button-filled {
+    background: linear-gradient(63deg, #b38d2a 0%, #f7ef8a 31.25%, #d0aa45 62.5%, #e8c662 100%);
+    background-size: 200% 200%;
+    animation: gradient-flow 10s ease-in-out infinite;
+    color: var(--color-dark);
+    padding: 14px 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    @include fluid-text(12, 19);
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+    @include mobile {
+      padding: 10px 20px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.35);
+      transform: skewX(-20deg);
+      transition: left 0.4s ease;
+    }
+    &:hover::after {
+      left: 150%;
+      box-shadow: 0px 6px 20px rgba(0,0,0,0.25);
+    }
+    &:active{
+      background: linear-gradient(63deg, #c9a33d 0%, #fff8b0 31.25%, #e0bb58 62.5%, #f9d780 100%);
+    }
+}
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*----------------------------------buttons--------------------------------*/

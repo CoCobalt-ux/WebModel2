@@ -1,0 +1,43 @@
+/*----------------------------------burger--------------------------------*/
+.burger {
+    display: none;
+    background-color: inherit;
+    @media (max-width: 750px) {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            transition: all 0.3s;
+            z-index: 999;
+            cursor: pointer;
+            padding: 4px;
+            &__line {
+                height: 2px;
+                transition: all 0.3s ease 0s;
+                background: var(--color-white);
+                border-radius: 2px;
+                &:first-child{
+                    width: 20px;
+                    margin-left: auto;
+               }
+                &:last-child{
+                    width: 15px;
+                    margin-left: auto;
+               }
+            }
+            &._active .burger__line:first-child{
+                transform: rotate(45deg) translate(4px, 6px);
+                width: 100%;
+            }
+            &._active .burger__line:nth-child(2){
+                transform: scale(0);
+            }
+            &._active .burger__line:last-child{
+                transform: rotate(-45deg) translate(4px, -6px);
+                width: 100%;
+            }
+    }
+}
+
+/*----------------------------------burger--------------------------------*/

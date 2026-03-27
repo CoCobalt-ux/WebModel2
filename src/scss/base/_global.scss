@@ -1,0 +1,130 @@
+/*----------------------------------global--------------------------------*/
+body.lock {
+    overflow: hidden;
+}
+body { 
+    font-family: var(--font-family-base); 
+    @include fluid-text(10, 14);
+    font-weight: 400; 
+    color: var(--color-white); 
+    background: var(--color-dark);
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
+}
+.main {
+    flex: 1 1 auto;
+}
+._container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+._ibg {
+    position: relative;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+.title {
+    font-size: 54px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    background: linear-gradient(63deg, #b38d2a 0%, #f7ef8a 31.25%, #d0aa45 62.5%, #e8c662 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    font-family: var(--font-family-roboto); 
+    text-shadow: 0 0 20px 0 #000, 0 0 70px 0 #000, 0 0 70px 0 #000;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 20px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 50px rgba(0, 0, 0, 0.8));
+    @include tablet {
+        font-size: 40px;
+    }
+    @include mobile {
+        font-size: 30px
+    }
+}
+.subtitle {
+    @include fluid-text(20, 50);
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background: linear-gradient(63deg, #b38d2a 0%, #f7ef8a 31.25%, #d0aa45 62.5%, #e8c662 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    font-family: var(--font-family-roboto); 
+    text-shadow: 0 0 20px 0 #000, 0 0 70px 0 #000, 0 0 70px 0 #000;
+    filter: drop-shadow(0 0 20px #000)
+            drop-shadow(0 0 20px #000)
+            drop-shadow(0 0 50px #000);
+}
+.text {
+    @include fluid-text(14, 20);
+    color: var(--color-black);
+    line-height: 140%;
+}
+.social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    @include fluid-text(12, 16);
+    @include tablet {
+        display: none;
+    }
+    @media (max-width: 750px) {
+        display: flex;
+        justify-content: start;
+    }
+    svg path {
+        transition: all  0.3s;
+    }
+    &__telegram {
+        @include hover {
+           svg path {
+            transition: all  0.3s;
+            fill: #0088cc;
+           }
+        }
+    }
+    &__youtube {
+        @include hover {
+           svg path {
+            transition: all  0.3s;
+            fill: #FF0000;
+           }
+        }
+    }
+    &__ok {
+        @include hover {
+           svg path {
+            transition: all  0.3s;
+            fill: #FF7700;
+           }
+        }
+    }
+    &__wiki {
+        @include hover {
+           svg path {
+            transition: all  0.3s;
+            fill: #6b6b6b;
+           }
+        }
+    }
+}
+/*----------------------------------global--------------------------------*/

@@ -1,0 +1,26 @@
+/*----------------------------------related-articles--------------------------------*/
+.related-articles {
+    margin-bottom: 120px;
+    @include mobile {
+        margin-bottom: 60px;
+    }
+	&__content {
+        .subtitle {
+            margin-bottom: 50px;
+            @include mobile {
+                margin-bottom: 20px;
+            }
+        }
+	}
+	&__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        @include mobile-650 {
+            grid-template-columns: 1fr;
+        }
+	}
+}
+
+
+/*----------------------------------related-articles--------------------------------*/

@@ -1,0 +1,134 @@
+/*----------------------------------form--------------------------------*/
+.form {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    position: relative;
+    &._sending::after {
+        opacity: 1;
+        visibility: visible;
+    }
+    &__title {
+        @include fluid-text(20, 40);
+        color: var(--color-dark);
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-block;
+        line-height: 100%;
+        font-family: var(--font-family-roboto); 
+        margin-bottom: 30px;
+    }
+    &__label {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    &__input,
+    &__textarea {
+        width: 100%;
+        padding: 16px 25px;
+        border-radius: 10px;
+        transition: all 0.3s ease 0s;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        @include mobile {
+            padding: 10px 15px;
+            border-radius: 7px;
+        }
+        &:focus {
+            box-shadow: 0 0 15px var(--color-yellow);
+        }
+        &._error {
+            border: 1px solid red;
+        }
+    }
+    &__error {
+        font-size: 16px;
+        color: red;
+        opacity: 0;
+        padding: 5px;
+        display: inline-block;
+        @include mobile {
+            font-size: 12px;
+            padding: 2px;
+        }
+    }
+    &__error.view {
+        opacity: 1;
+    }
+    &__textarea {
+        resize: none;
+        margin-bottom: 16px;
+        min-height: 100px;
+        margin-bottom: 30px;
+        @include mobile {
+            margin-bottom: 15px;
+            min-height: 75px;
+        }
+    }
+    &__button {
+        width: auto;
+        padding: 16px 34px;
+        background-color: var(--color-dark);
+        cursor: pointer;
+        color: var(--color-white);
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all 0.3s;
+        margin-bottom: 30px;
+        display: block;
+        @include mobile {
+            margin-bottom: 15px;
+            padding: 10px 22px;
+            font-size: 11px;
+        }
+        @include hover {
+            background-color: #58533a;
+            transition: all 0.3s;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        @include mobile {
+            flex-wrap: wrap;
+            margin-bottom: 22px;
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__link {
+        color: var(--color-dark);
+        @include fluid-text(12, 16);
+        transition: all 0.3s;
+        @include hover {
+            color: var(--color-yellow);
+            transition: all 0.3s;
+        }
+    }
+    &__text {
+        color: #4D4D4D;
+        line-height: 110%;
+        margin-top: 30px;
+        @include mobile {
+            margin-top: 20px;
+        }
+    }
+    &__items {
+        display: flex;
+        gap: 0px 20px;
+        @include mobile {
+            gap: 0px 15px;
+        }
+        @include mobile-650 {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
+    &__item {
+        width: 100%;
+    }
+}
+/*----------------------------------form--------------------------------*/

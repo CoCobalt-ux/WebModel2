@@ -1,0 +1,319 @@
+/*----------------------------------hero--------------------------------*/
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    background-image: url(../images/content/main.webp);
+    background-repeat: no-repeat;
+    width: 100%; 
+    background-size: cover;    
+    background-position: center;
+    @include mobile {
+        margin-bottom: 30px;
+    }
+    @include mobile-650 {
+        background-image: none; 
+    }
+	&__content {
+        position: relative;
+        z-index: 2;
+        padding-top: 180px;
+        padding-bottom: 80px;
+        .title {
+            margin-bottom: 30px;
+            @include mobile {
+                margin-bottom: 10px;
+            }
+        }
+        @include tablet {
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+        @include mobile {
+            padding-top: 100px;
+        }
+        @include mobile-650 {
+            padding-top: 80px;
+            padding-bottom: 0px;
+        }
+	}
+	&__body {
+        position: relative;
+        max-width: 860px;
+        @include desktop {
+            max-width: 700px;
+        }
+        @include mobile {
+            max-width: 500px;
+        }
+        @include mobile-650 {
+            margin-bottom: 30px;
+        }
+	}
+	&__text {
+        @include fluid-text(14, 28);
+        line-height: 1.2;
+        margin-bottom: 60px;
+        filter: drop-shadow(0 0 5px #000) drop-shadow(0 0 10px #000) drop-shadow(0 0 10px #000);
+        @include mobile {
+            margin-bottom: 30px;
+        }
+	}
+	&__wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        @include mobile-650 {
+        background-image: url(../images/content/main.webp);
+        background-repeat: no-repeat;
+        width: 100%; 
+        background-size: cover;    
+        background-position: center;
+        border-radius: 20px;
+        padding: 10px 10px 60px 10px;
+        align-items: end;
+        gap: 2px;
+        position: relative;
+        }
+	}
+	&__hearts {
+        margin-top: 80px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        @include tablet {
+            margin-top: 50px;
+            width: 90px;
+            height: 133px;
+        }
+        @include mobile-650 {
+            position: absolute;
+            width: 40px;
+            bottom: -50px;
+        }
+	}
+	&__block {
+        &--mod {
+            margin-top: -70px;
+            margin-left: -250px;
+            @include tablet {
+                margin-left: 0px;
+                margin-top: -90px;
+            }
+            @include mobile {
+                margin-left: 80px;
+                margin-top: -70px;
+            }
+            @include mobile-650 {
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+        }
+	}
+	&__item {
+        margin-bottom: 20px;
+        @include tablet {
+            margin-bottom: 14px;
+        }
+        @include mobile {
+            margin-bottom: 10px;
+        }
+        @include mobile-650 {
+            margin-bottom: 2px;
+        }
+        &--mod {
+            margin-left: 100px;
+            @include tablet {
+                margin-left: 0px;
+            }
+        }
+		&_name {
+            font-size: 16px;
+            line-height: 140%;
+            color: var(--color-yellow);
+            opacity: 0.8;
+            margin-bottom: 8px;
+            @include mobile-650 {
+               font-size: 6px;
+               margin-bottom: 3px;
+            }
+		}
+        &_inner {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 89px;
+            padding: 11px 17px;
+            border: 1px solid var(--color-yellow);
+            backdrop-filter: blur(26.602563858032227px);
+            width: fit-content;
+            @include mobile {
+                padding: 6px 10px;
+            }
+            @include mobile-650 {
+                padding: 4px 6px;
+                gap: 2px;
+            }
+        }
+		&_text {
+            font-weight: 700;
+            @include fluid-text(7, 20);
+            line-height: 140%;
+            background: linear-gradient(90deg, #f7ef8a 0%, #e8c662 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+		}
+        &_icon {
+            font-size: 20px;
+            @include mobile {
+                font-size: 10px;
+            }
+            @include mobile-650 {
+                font-size: 5px;
+            }
+        }
+	}
+	&__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+	}
+    &__sum {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @include tablet {
+            margin-bottom: 5px;
+        }
+        @include mobile-650 {
+             align-items: start;
+        }
+        &--mod {
+            margin-right: 50px;
+            @include mobile-650 {
+                margin-right: 0px;
+                margin-bottom: 2px;
+            }
+        }
+        &_name {
+            font-size: 16px;
+            line-height: 140%;
+            color: var(--color-yellow);
+            opacity: 0.8;
+            margin-bottom: 8px;
+            margin-right: 35px;
+            @include mobile-650 {
+                margin-bottom: 3px;
+                font-size: 6px;
+            }
+        }
+        &_text {
+            border-radius: 89px;
+            backdrop-filter: blur(26.602563858032227px);
+            background: linear-gradient(63deg, #b38d2a 0%, #f7ef8a 31.25%, #d0aa45 62.5%, #e8c662 100%);
+            display: inline-block;
+            padding: 11px 17px;
+            color: var(--color-dark);
+            font-weight: 700;
+            @include mobile {
+                padding: 6px 10px;
+            }
+            @include mobile-650 {
+                font-size: 7px;
+                padding: 4px 6px;
+            }
+        }
+	}
+    .message {
+        &:first-child {
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 2s;
+            &._action {
+               opacity: 1;
+               transform: translateX(0);
+            }
+        }
+        &:last-child {
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 1.5s;
+            &._action {
+               opacity: 1;
+               transform: translateX(0);
+            }
+        }
+    }
+    .hero__item {
+        opacity: 0;
+        &:first-child {
+            transform: translateY(100%);
+            transition: all 2s;
+        }
+        &:nth-child(3) {
+            transform: translateY(100%);
+            transition: all 3s;
+        }
+        &._action {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+    .hero__sum {
+        opacity: 0;
+        transition: all 3s;
+        &:nth-child(2) {
+            transform: translateY(100%);
+            transition: all 5s;
+        }
+        &:nth-child(4) {
+            transform: translateY(100%);
+            transition: all 6s;
+        }
+        &._action {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+
+    &--mod {
+        margin-bottom: 0px;
+        .hero__content {
+            padding: 213px 15px 600px;
+            @include tablet {
+                padding: 110px 15px 377px;
+            }
+            @include mobile-650 {
+                padding: 78px 15px 30px;
+            }
+        }
+        .hero__body {
+            max-width: 723px;
+            margin-bottom: 0px;
+            @include tablet {
+                max-width: 420px;
+            }
+        }
+        .hero__text {
+            margin-bottom: 0px;
+        }
+        @include mobile-650 {
+            .hero__bg {
+                position: static;
+                padding: 0px 15px;
+                img {
+                    position: static;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------hero--------------------------------*/

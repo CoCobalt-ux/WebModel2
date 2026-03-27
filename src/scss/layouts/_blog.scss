@@ -1,0 +1,127 @@
+/*----------------------------------blog--------------------------------*/
+.blog {
+    margin-top: 200px;
+    @include tablet {
+        margin-top: 160px;
+    }
+    @include mobile {
+        margin-top: 76px;
+    }
+	&__content {
+        .title {
+            text-align: center;
+            margin-bottom: 50px;
+            @include tablet {
+                text-align: start;
+            }
+            @include mobile-650 {
+                margin-bottom: 30px;
+            }
+        }
+	}
+	&__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px 50px;
+        margin-bottom: 50px;
+        @include mobile {
+            gap: 30px 40px;
+        }
+        @include mobile-650 {
+            flex-wrap: wrap;
+        }
+	}
+	&__body {
+        flex-basis: 1090px;
+        @include tablet {
+            flex-basis: 950px;
+        }
+        @include mobile-650 {
+            order: 1;
+        }
+	}
+	&__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+        @include tablet {
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        @include mobile {
+            .post-card {
+                border-radius: 25px 25px 11px 11px;
+                img {
+                    border-radius: 11px;
+                }
+                &__title {
+                    margin-bottom: 5px;
+                }
+            }
+            .post-card__content {
+                padding: 10px;
+            }
+        }
+        @include mobile-650 {
+            grid-template-columns: 1fr;
+        }
+	}
+    &__aside {
+        flex-basis: 350px;
+        @include mobile-650 {
+            flex-basis: 100%;
+        }
+    }
+	&__inner {
+        background-color: #383838;
+        padding: 20px;
+        border-radius: 20px;
+        position: sticky;
+        top: 100px;
+        @include tablet {
+            padding: 15px;
+        }
+        @include mobile {
+            border-radius: 11px;
+            padding: 15px 11px;
+        }
+	}
+	&__subtitle {
+        font-weight: 700;
+        @include fluid-text(13, 20);
+        line-height: 140%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        @include tablet {
+            margin-bottom: 15px;
+        }
+	}
+	&__list {
+        margin-bottom: 50px;
+        @include tablet {
+            margin-bottom: 40px;
+        }
+        @include mobile {
+            margin-bottom: 30px;
+        }
+        li {
+            @include fluid-text(12, 18);
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+	}
+	&__tags {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            @include fluid-text(12, 18);
+            padding: 5px;
+            cursor: pointer;
+        }
+	}
+}
+
+/*----------------------------------blog--------------------------------*/

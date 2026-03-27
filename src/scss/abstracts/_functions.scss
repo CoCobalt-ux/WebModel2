@@ -1,0 +1,14 @@
+// Конвертация пикселей в rem
+@function rem($pixels) {
+  @return ($pixels / 16) * 1rem;
+}
+
+// Затемнение цвета
+@function darken-color($color, $amount: 10%) {
+  @return darken($color, $amount);
+}
+
+// Осветление цвета
+@function lighten-color($color, $amount: 10%) {
+  @return lighten($color, $amount);
+}

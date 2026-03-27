@@ -1,0 +1,129 @@
+/*----------------------------------contacts--------------------------------*/
+.contacts {
+    position: relative;
+    padding: 180px 0px 200px;
+    @include tablet {
+        padding: 130px 0px 20px;
+    }
+    @include mobile {
+        padding: 90px 0px 15px;
+    }
+    @include mobile-650 {
+        padding: 70px 0px 60px;
+    }
+	&__content {
+        .subtitle {
+            margin-bottom: 60px;
+            @include tablet {
+                margin-bottom: 40px;
+            }
+            @include mobile {
+                margin-bottom: 30px;
+            }
+        }
+        .footer__messengers {
+            li {
+                @include hover {
+                    .footer__messengers_title {
+                        transform: translateY(-350%);
+                    }
+                }
+            }
+        }
+        .footer__messengers_title {
+            left: 18%;
+        }
+	}
+	&__body {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px 10px;
+        @include mobile-650 {
+           flex-wrap: wrap;
+        }
+	}
+	&__form {
+        flex-basis: 745px;
+        @include tablet {
+            flex-basis: 540px;
+        }
+        @include mobile {
+            flex-basis: 400px;
+        }
+        @include mobile-650 {
+            flex-basis: 100%;
+        }
+	}
+	&__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include mobile-650 {
+            display: none;
+        }
+	}
+    .footer__messengers {
+        svg {
+            width: 40px;
+            height: 40px;
+            @include mobile {
+                width: 22px;
+                height: 22px;
+            }
+            @include mobile-650 {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        li {
+            @include fluid-text(18, 30);
+            margin-bottom: 30px;
+            @include tablet {
+                margin-bottom: 20px;
+            }
+            @include mobile {
+                margin-bottom: 15px;
+            }
+            a {
+                gap: 30px;
+                @include mobile-650 {
+                    gap: 20;
+                }
+            }
+        }
+    }
+    .form {
+        border-radius: 30px;
+        padding: 50px;
+        @include tablet {
+            padding: 40px;
+            border-radius: 20px;
+        }
+        @include mobile {
+            padding: 30px;
+            &__title {
+                margin-bottom: 20px;
+            }
+        }
+        @include mobile-650 {
+            padding: 20px;
+        }
+    }
+    &--mod {
+        padding-bottom: 455px;
+        @include tablet {
+            padding-bottom: 90px;
+        }
+        @include mobile {
+            padding-bottom: 60px;
+        }
+    }
+}
+
+
+
+/*----------------------------------contacts--------------------------------*/

@@ -1,0 +1,27 @@
+.search {
+    margin-bottom: 50px;
+    @include tablet {
+        margin-bottom: 40px;
+    }
+    @include mobile {
+        margin-bottom: 30px;
+    }
+    &__label {
+        display: flex;
+        background-color: #F5F5F5;
+        padding: 16px 20px;
+        border-radius: 10px;
+        @include mobile {
+            padding: 10px 15px;
+        }
+    }
+    &__input {
+        width: 100%;
+        background-color: inherit;
+        font-family: var(--font-family-roboto);
+        font-size: 16px;
+    }
+    &__button {
+        background-color: initial;
+    }
+}

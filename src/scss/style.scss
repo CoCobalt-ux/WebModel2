@@ -1,0 +1,45 @@
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+// Base
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/global';
+
+// Components
+@import 'components/feedback';
+@import 'components/burger';
+@import 'components/buttons';
+@import 'components/calculator';
+@import 'components/message';
+@import 'components/card';
+@import 'components/checkbox';
+@import 'components/form';
+@import 'components/menu';
+@import 'components/pagination';
+@import 'components/radio';
+@import 'components/search';
+@import 'components/sliders';
+
+// Layouts
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/hero';
+@import 'layouts/translator';
+@import 'layouts/info';
+@import 'layouts/payment';
+@import 'layouts/calculate';
+@import 'layouts/anonymous';
+@import 'layouts/why-webmodel';
+@import 'layouts/work';
+@import 'layouts/materials';
+@import 'layouts/section-form';
+@import 'layouts/about';
+@import 'layouts/blog';
+@import 'layouts/article';
+@import 'layouts/related-articles';
+@import 'layouts/contacts';
+@import 'layouts/reviews';

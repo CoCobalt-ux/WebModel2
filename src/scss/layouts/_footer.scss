@@ -1,0 +1,110 @@
+/*----------------------------------footer--------------------------------*/
+.footer {
+    border-top: 1px solid #E8C662;
+    padding: 60px 0px;
+    color: var(--color-white);
+    @include tablet {
+        padding: 45px 0px;
+    }
+	&__body {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+        @include mobile {
+            display: block;
+        }
+	}
+	&__block {
+        .social-networks {
+            justify-content: start;
+        }
+        &:last-child {
+            flex-basis: 280px;
+        }
+        @include tablet {
+            &:not(:last-child) {
+              margin-bottom: 20px;
+            }
+        }
+	}
+	&__logo {
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        @include mobile {
+            width: 100px;
+        }
+	}
+	&__texts {
+        margin-bottom: 30px;
+	}
+	&__text {
+        margin-bottom: 10px;
+	}
+	&__links {
+        margin-bottom: 30px;
+	}
+	&__link {
+        text-decoration: underline;
+        margin-bottom: 10px;
+	}
+	&__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        @include fluid-text(12, 16);
+        margin-bottom: 30px;
+	}
+	&__messengers {
+        li {
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+            a {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                transition: all 0.3s;
+                @include hover {
+                    color: var(--color-yellow);
+                    transition: all 0.3s;
+                }
+            }
+            @include hover {
+                .footer__messengers_title {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(-150%);
+                }
+            }
+        }
+        &_title {
+            position: absolute;
+            bottom: 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(100%);
+            transition: all 0.3s;
+            left: 20%;
+        }
+	}
+	&__list {
+       display: grid;
+       grid-template-columns: 1fr 70px;
+       gap: 15px;
+       li {
+        a {
+            transition: all 0.3s;
+            @include hover {
+                color: var(--color-yellow);
+                transition: all 0.3s;
+            }
+        }
+       }
+	}
+}
+
+
+/*----------------------------------footer--------------------------------*/
